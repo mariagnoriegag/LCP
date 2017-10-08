@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lima City Pass</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="../src/assets/limalogowhite.png" sizes="32x32">
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+    <script src="../src/js/floatingcarousel.min.js" type="text/javascript"></script>
+    
+  </head>
+  <body>
+    
+    <div id="app"></div>
+   
+    <script src="./dist/build.js"></script>
+
+  </body>
+  
+  <script type="text/javascript">
+
+    (function(b,c){var $=b.jQuery||b.Cowboy||(b.Cowboy={}),a;$.throttle=a=function(e,f,j,i){var h,d=0;if(typeof f!=="boolean"){i=j;j=f;f=c}function g(){var o=this,m=+new Date()-d,n=arguments;function l(){d=+new Date();j.apply(o,n)}function k(){h=c}if(i&&!h){l()}h&&clearTimeout(h);if(i===c&&m>e){l()}else{if(f!==true){h=setTimeout(i?k:l,i===c?e-m:e)}}}if($.guid){g.guid=j.guid=j.guid||$.guid++}return g};$.debounce=function(d,e,f){return f===c?a(d,e,false):a(d,f,e!==false)}})(this);
+
+    //responsive
+        var opts = {
+            autoScroll : true,
+            autoScrollSpeed : 20000
+        },
+
+        responsiveCarousel = $('#carousel-responsive').floatingCarousel(opts);
+        
+        $(window).resize($.debounce(100, function () {
+            responsiveCarousel.update(opts);
+        }));
+  </script>
+
+</html>
