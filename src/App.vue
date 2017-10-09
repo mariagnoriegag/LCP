@@ -47,7 +47,7 @@
     <!-- CONTAINER VIDEO -->
     <v-container fluid id="home" style="margin:0; padding:0; height:-webkit-fill-available; background-color:black;">
       <v-flex lg12>
-        <v-parallax src="../src/assets/limaplaza.jpg" height=-webkit-fill-available style="height:-webkit-fill-available; width:auto;">
+        <v-parallax src="../src/assets/portadalcp.png" height=-webkit-fill-available style="height:-webkit-fill-available; width:auto;">
           <v-layout column align-center justify-center style="height:-webkit-fill-available;"r>
             <img id="logoimg" src="../src/assets/limalogowhite.png" class="shadowfilter"  style="width:auto;height:342px;"></img>
           </v-layout>
@@ -66,13 +66,13 @@
   <!-- MAIN -->
   <main >
     <!-- INCLUDED -->
-    <v-container id="included" fluid style="margin:0; padding:0; color: #fff;">
-      <v-layout row wrap justify-center align-center class="black darken-4" style=" height:-webkit-fill-available; padding-top:1%;padding-bottom:1%;background: url('../src/assets/giflcp.gif') no-repeat fixed center; background-size: auto 100%;background-color: #fff;">
+    <v-container id="included" fluid style="margin:0; padding:0; ">
+      <v-layout row wrap justify-center align-center class="black darken-4" style=" height:-webkit-fill-available; padding-top:1%;padding-bottom:1%;  background-size: auto 100%;">
         <v-flex xs12 sm12 md12 lg12>
           <v-layout justify-center align-center>
 
             <v-parallax id="limagif" src="" height=-webkit-fill-available; style="width:100%; height:724px; padding:0; filter: grayscale(0%); ">
-              <v-layout row wrap justify-center align-center style="padding-bottom:0px">
+              <v-layout row wrap justify-center align-center style="padding-bottom:0px;background: #243139">
                 <v-flex xs12 sm12 md12 lg12 class="carousel shadowfilterfixed" id="carousel-responsive" style="height:200px">
                   <ul  style="padding:0; height:200px; width:200px;">
                     <li >
@@ -378,9 +378,7 @@ ul, li, ol {
 }
 .shadowfilter {
   -webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.90));
-  -webkit-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
-  transition: all 0.5s linear;
+  
 }
 .shadowfilter:hover {
   -webkit-filter: drop-shadow(0px 0px 4px #ffffff);
