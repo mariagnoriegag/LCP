@@ -49,7 +49,7 @@
       <v-flex lg12>
         <v-parallax src="../src/assets/limaplaza.jpg" height=-webkit-fill-available style="height:-webkit-fill-available; width:auto;">
           <v-layout column align-center justify-center style="height:-webkit-fill-available;"r>
-            <img id="logoimg" src="../src/assets/limalogowhite.png"  style="width:auto;height:342px;"></img>
+            <img id="logoimg" src="../src/assets/limalogowhite.png" class="shadowfilter"  style="width:auto;height:342px;"></img>
           </v-layout>
         </v-parallax>
       </v-flex>
@@ -383,7 +383,7 @@ ul, li, ol {
   transition: all 0.5s linear;
 }
 .shadowfilter:hover {
-  -webkit-filter: drop-shadow(0px 6px 8px #ffffff);
+  -webkit-filter: drop-shadow(0px 0px 4px #ffffff);
 }
 .shadowfilterfixed {
   -webkit-filter: drop-shadow(0px 0px 4px #ffffff);
