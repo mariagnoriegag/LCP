@@ -298,7 +298,7 @@ $(document).ready(function() {
       $('#bb').addClass('pink--text');
       $('#seemore').fadeOut();
     } else if(newHeight>=stopHeight ){
-      if (parseInt($('#logoimg').css('height')) <= 300){
+      if (windowScroll >= 10){
         $('#seemore').fadeOut();
         $("#logoimg").show();
         $('#logoimg').css("height", newHeight);
