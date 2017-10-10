@@ -39,7 +39,7 @@
         <v-toolbar-items class="">
           <v-layout justify-center align-center>
             <v-btn href="#" class="white--text" style="height: 38px; width: 38px;" icon><v-icon>person</v-icon></v-btn>
-            <v-btn id = "bb" href="#" class="orange white--text text--darken-3" round>BUY NOW</v-btn>
+            <v-btn id = "bb" href="#" class="orange lighten-3 white--text " round>BUY NOW</v-btn>
           </v-layout>
         </v-toolbar-items>
       </v-flex>
@@ -67,24 +67,24 @@
   <main >
     <!-- INCLUDED -->
     <!-- #438496 #B37D4E #CD5360 #286DA8 #2c3e50 midnight-->
-    <v-container id="included" fluid style="margin:0; padding:0; " class="degradado" >
-      <v-layout row wrap justify-center class=" darken-4" style=" height:-webkit-fill-available; padding-top:1%;padding-bottom:1%;  background-size: auto 100%;">
-        
+    <v-container id="included" fluid style="margin:0; padding:0; " class="" >
+      <v-layout row wrap justify-center class="" style=" height:-webkit-fill-available; padding-top:1%;padding-bottom:1%;  background-size: auto 100%;">
 
         <v-flex xs12 sm12 md12 lg12>
           <v-layout row align-center justify-center style="padding-top:10%; padding-bottom:4%">
             <v-flex xs12 sm6 md6 lg6>
               <v-layout column align-center justify-center>
                 <img src="../src/assets/tickets.png" style="width:40%;"></img>
-                <h4 class="white--text">Buy your tickets today!</h4>
+                <h4 class="black--text">Buy your tickets today!</h4>
               </v-layout>
 
             </v-flex>
             <v-flex xs12 sm6 md6 lg6>
-              <v-layout column align-center justify-center class="white--text" style="padding-right:20%">
-              <p style="font-size:20px"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna fermentum iaculis eu non diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. 
-              </p>
-            </v-layout>
+              <v-layout column align-center justify-center class="black--text" style="padding-right:20%; padding-left:20%">
+                <p class="flow-text" style="font-size:20px"> 
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna fermentum iaculis eu non diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. 
+                </p>
+              </v-layout>
             </v-flex>
           </v-layout>
         </v-flex>
@@ -98,7 +98,9 @@
                     <div class="block">
                       <img class="listsize" title="" alt="" src="../src/assets/huacapullana.png">
                       <div class="block-caption">
-                        Huaca Pullana
+                        <p class="flow-text white--text " style="font-size:30px;margin:0">
+                          HUACA PUCLLAN A MUSEUM
+                        </p>
                       </div>
                     </div>
                   </a>
@@ -281,10 +283,10 @@ $(document).ready(function() {
 
     if (windowScroll > windowHeight - 50 && windowScroll < (2*windowHeight)-50) {
       $('#mylogo').show();
-      //$('#toolbar1').removeClass('transparent');
+      $('#toolbar1').removeClass('transparent');
       //$('#toolbar1').removeClass('elevation-0');
       //$('#toolbar1').addClass('pink darken-2');
-      //$('#toolbar1').css("background-color", "#CD5360");
+      $('#toolbar1').css("background-color", "#52c8d8");
       //$('#toolbar1').addClass('elevation-4');
       //$('#bb').removeClass('orange');
       //$('#bb').removeClass('white--text');
@@ -292,40 +294,49 @@ $(document).ready(function() {
       //$('#bb').addClass('pink--text');
       $('#seemore').fadeOut();
 
-      $('#btn_included').removeClass('white--text');
-      $('#btn_included').addClass('orange--text text--darken-3');
+      //$('#btn_included').removeClass('white--text');
+      //$('#btn_included').addClass('orange--text text--lighten-3');
+      $('#btn_included').addClass('shadowfilterfixed');
 
-      $('#btn_useit').removeClass('blue--text text--darken-3');
-      $('#btn_useit').addClass('white--text');
+      //$('#btn_useit').removeClass('blue--text text--lighten-3');
+      $('#btn_useit').removeClass('shadowfilterfixed');
+      //$('#btn_useit').addClass('white--text');
 
-      $('#btn_benefits').removeClass('pink--text text--darken-3');
-      $('#btn_benefits').addClass('white--text');
+      //$('#btn_benefits').removeClass('pink--text text--lighten-3');
+      $('#btn_benefits').removeClass('shadowfilterfixed');
+      //$('#btn_benefits').addClass('white--text');
 
     } else if(windowScroll > (2*windowHeight)-50 && windowScroll < (3*windowHeight)-50) {
       $('#mylogo').show();
       $('#seemore').fadeOut();
 
-      $('#btn_included').removeClass('orange--text text--darken-3');
-      $('#btn_included').addClass('white--text');
+      //$('#btn_included').removeClass('orange--text text--lighten-3');
+      $('#btn_included').removeClass('shadowfilterfixed');
+      //$('#btn_included').addClass('white--text');
 
-      $('#btn_useit').removeClass('white--text');
-      $('#btn_useit').addClass('blue--text text--darken-3');
+      //$('#btn_useit').removeClass('white--text');
+      //$('#btn_useit').addClass('blue--text text--lighten-3');
+      $('#btn_useit').addClass('shadowfilterfixed');
 
-      $('#btn_benefits').removeClass('pink--text text--darken-3');
-      $('#btn_benefits').addClass('white--text');
+      //$('#btn_benefits').removeClass('pink--text text--lighten-3');
+      $('#btn_benefits').removeClass('shadowfilterfixed');
+      //$('#btn_benefits').addClass('white--text');
 
     } else if(windowScroll > (3*windowHeight)-50 && windowScroll < (4*windowHeight)-50) {
       $('#mylogo').show();
       $('#seemore').fadeOut();
 
-      $('#btn_included').removeClass('orange--text text--darken-3');
-      $('#btn_included').addClass('white--text');
+      //$('#btn_included').removeClass('orange--text text--lighten-3');
+      $('#btn_included').removeClass('shadowfilterfixed');
+      //$('#btn_included').addClass('white--text');
 
-      $('#btn_useit').removeClass('blue--text text--darken-3');
-      $('#btn_useit').addClass('white--text');
+      //$('#btn_useit').removeClass('blue--text text--lighten-3');
+      $('#btn_useit').removeClass('shadowfilterfixed');
+      //$('#btn_useit').addClass('white--text');
 
-      $('#btn_benefits').removeClass('white--text');
-      $('#btn_benefits').addClass('pink--text text--darken-3');
+      //$('#btn_benefits').removeClass('white--text');
+      //$('#btn_benefits').addClass('pink--text text--lighten-3');
+      $('#btn_benefits').addClass('shadowfilterfixed');
 
     } else if(newHeight>=stopHeight ){
       if (windowScroll >= 10){
@@ -343,14 +354,17 @@ $(document).ready(function() {
         $('#bb').addClass('white--text');
         $('#mylogo').hide(40);
         
-        $('#btn_included').removeClass('orange--text text--darken-3');
-        $('#btn_included').addClass('white--text');
+        //$('#btn_included').removeClass('orange--text text--lighten-3');
+        $('#btn_included').removeClass('shadowfilterfixed');
+        //$('#btn_included').addClass('white--text');
 
-        $('#btn_useit').removeClass('blue--text text--darken-3');
-        $('#btn_useit').addClass('white--text');
+        //$('#btn_useit').removeClass('blue--text text--lighten-3');
+        $('#btn_useit').removeClass('shadowfilterfixed');
+        //$('#btn_useit').addClass('white--text');
 
-        $('#btn_benefits').removeClass('pink--text text--darken-3');
-        $('#btn_benefits').addClass('white--text');
+        //$('#btn_benefits').removeClass('pink--text text--lighten-3');
+        $('#btn_benefits').removeClass('shadowfilterfixed');
+        //$('#btn_benefits').addClass('white--text');
       }
       else {
         $('#seemore').fadeIn();
@@ -367,14 +381,17 @@ $(document).ready(function() {
         $('#bb').addClass('white--text');
         $('#mylogo').hide();
         
-        $('#btn_included').removeClass('orange--text text--darken-3');
-        $('#btn_included').addClass('white--text');
+        //$('#btn_included').removeClass('orange--text text--lighten-3');
+        $('#btn_included').removeClass('shadowfilterfixed');
+        //$('#btn_included').addClass('white--text');
 
-        $('#btn_useit').removeClass('blue--text text--darken-3');
-        $('#btn_useit').addClass('white--text');
+        //$('#btn_useit').removeClass('blue--text text--lighten-3');
+        $('#btn_useit').removeClass('shadowfilterfixed');
+        //$('#btn_useit').addClass('white--text');
 
-        $('#btn_benefits').removeClass('pink--text text--darken-3');
-        $('#btn_benefits').addClass('white--text');
+        //$('#btn_benefits').removeClass('pink--text text--lighten-3');
+        $('#btn_benefits').removeClass('shadowfilterfixed');
+        //$('#btn_benefits').addClass('white--text');
       }
     } else if (windowScroll>=toplogo-5){
       $('#mylogo').show();
@@ -393,14 +410,18 @@ $(document).ready(function() {
       $('#bb').addClass('orange');
       $('#bb').addClass('white--text');
       $('#mylogo').hide();
-      $('#btn_included').removeClass('orange--text text--darken-3');
-      $('#btn_included').addClass('white--text');
+      
+      //$('#btn_included').removeClass('orange--text text--lighten-3');
+      $('#btn_included').removeClass('shadowfilterfixed');
+      //$('#btn_included').addClass('white--text');
 
-      $('#btn_useit').removeClass('blue--text text--darken-3');
-      $('#btn_useit').addClass('white--text');
+      //$('#btn_useit').removeClass('blue--text text--lighten-3');
+      $('#btn_useit').removeClass('shadowfilterfixed');
+      //$('#btn_useit').addClass('white--text');
 
-      $('#btn_benefits').removeClass('pink--text text--darken-3');
-      $('#btn_benefits').addClass('white--text');
+      //$('#btn_benefits').removeClass('pink--text text--lighten-3');
+      $('#btn_benefits').removeClass('shadowfilterfixed');
+      //$('#btn_benefits').addClass('white--text');
     }
   });
 
@@ -428,6 +449,9 @@ export default {
 </script>
 
 <style type="text/css">
+
+
+
 ul, li, ol {
   list-style-type: none;
   padding: 0;
@@ -444,26 +468,19 @@ ul, li, ol {
 .shadowfilterfixed {
   -webkit-filter: drop-shadow(0px 0px 4px #ffffff);
 }
-
 .parallax__content {
   padding: 0;
 }
-
 .hoveropacity {
   opacity: 1;
-
 }
-
 .hoveropacity:hover {
   opacity: 1.0;
   transform: scale(1.1) rotateZ(-2deg);
   -moz-transform: scale(1.1) rotateZ(-2deg);
   -webkit-transform: scale(1.1) rotateZ(-2deg);
   -o-transform: scale(1.1) rotateZ(-2deg);
-  
 }
-
-
 .block {
   display: block;
   height: 250px;
@@ -480,7 +497,7 @@ ul, li, ol {
   -o-transition: all 0.2s ease-in-out 0s;
 }
 .block .block-caption {
-  background: rgba(,0,0,0.2);
+  background: rgba(0,0,0,0.5);
   bottom: 0;
   color: #000;
   display: table;
@@ -496,28 +513,26 @@ ul, li, ol {
   line-height: 250px; 
   text-align: center;
   vertical-align: middle;
-
 }
 .block:hover .block-caption {
   opacity: 1;
 }
 .block:hover img {
-  opacity: 0.7;
+  opacity: 1;
   transform: scale(1.1) rotateZ(-2deg);
   -moz-transform: scale(1.1) rotateZ(-2deg);
   -webkit-transform: scale(1.1) rotateZ(-2deg);
   -o-transform: scale(1.1) rotateZ(-2deg);
 }
-
 .degradado{
   background: rgba(119,201,212,1);
-  background: -moz-linear-gradient(left, rgba(119,201,212,1) 0%, rgba(87,188,144,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(119,201,212,1)), color-stop(100%, rgba(87,188,144,1)));
-  background: -webkit-linear-gradient(left, rgba(119,201,212,1) 0%, rgba(87,188,144,1) 100%);
-  background: -o-linear-gradient(left, rgba(119,201,212,1) 0%, rgba(87,188,144,1) 100%);
-  background: -ms-linear-gradient(left, rgba(119,201,212,1) 0%, rgba(87,188,144,1) 100%);
-  background: linear-gradient(to right, rgba(119,201,212,1) 0%, rgba(87,188,144,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', endColorstr='#57bc90', GradientType=1 );
+  background: -moz-linear-gradient(left, rgba(119,201,212,1) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(87,188,144,1)));
+  background: -webkit-linear-gradient(left, rgba(119,201,212,1) 0%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(left, rgba(119,201,212,1) 0%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(left, rgba(119,201,212,1) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to right, rgba(119,201,212,1) 0%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', endColorstr='#ffffff', GradientType=1 );
 }
 
 .listsize{

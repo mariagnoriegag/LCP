@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import Vuetify from 'vuetify'
 import './stylus/main.styl'
+//import '../node_modules/dist/css/materialize.min.css'
 import anime from 'animejs'
 
 
