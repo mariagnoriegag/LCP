@@ -381,6 +381,7 @@ $(document).ready(function() {
 
     } else if(windowScroll > (2*windowHeight)-50 && windowScroll < (3*windowHeight)-50) {
       $('#mylogo').show();
+      $('#toolbar1').css("background-color", "#6ed1a2");
       $('#seemore').fadeOut();
 
       //$('#btn_included').removeClass('orange--text text--lighten-3');
@@ -397,6 +398,7 @@ $(document).ready(function() {
 
     } else if(windowScroll > (3*windowHeight)-50 && windowScroll < (4*windowHeight)-50) {
       $('#mylogo').show();
+      $('#toolbar1').css("background-color", "#ffab82");
       $('#seemore').fadeOut();
 
       //$('#btn_included').removeClass('orange--text text--lighten-3');
