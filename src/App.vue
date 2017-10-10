@@ -83,7 +83,7 @@
             </v-flex>
             <v-flex xs12 sm4 md4 lg4>
               <v-layout column align-center justify-center class="" style="">
-                <img src="../src/assets/tickets.png" style="width:80%;"></img>
+                <img class="rotateYaxis" src="../src/assets/tickets.png" style="width:80%;"></img>
                 <h4 class="flow-text" style="color: #F31160;font-size:30px;font-weight:500;">Buy your tickets! </h4> 
                 <v-icon large style="color: #5CC9F5">flight_takeoff</v-icon> 
                 <h4 class="flow-text" style="color: #5CC9F5;font-weight:400;">VISIT US</h4>
@@ -657,6 +657,19 @@ ul, li, ol {
     -ms-filter: hue-rotate(360deg);
     filter: hue-rotate(360deg);
   }
+}
+
+/* MOVE Y_AXIS AND IMAGE */
+
+.rotateYaxis{
+  animation: mover 2.5s infinite linear 2s;
+}
+
+@keyframes mover {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(45deg); }
+    70% { transform: rotateY(340deg); }
+    100% { transform: rotateY(360deg); }
 }
 
 </style>
