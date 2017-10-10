@@ -39,7 +39,8 @@
         <v-toolbar-items class="">
           <v-layout justify-center align-center>
             <v-btn href="#" class="white--text" style="height: 38px; width: 38px;" icon><v-icon>person</v-icon></v-btn>
-            <v-btn id = "bb" href="#" class="orange lighten-3 white--text " round>BUY NOW</v-btn>
+            <v-btn id = "bb" href="#" class="arcoirisbutton orange lighten-3 white--text elevation-0 shadowfilter" round>BUY NOW</v-btn>
+
           </v-layout>
         </v-toolbar-items>
       </v-flex>
@@ -56,7 +57,7 @@
 
       <v-flex lg12>
         <v-layout justify-center align-center style="margin:-70px">
-         <v-btn href="#included"  class="transparent arrow" style="height: 1px; width: 1px;" >
+         <v-btn dark href="#included"  class="transparent arrow elevation-0" style="height: 1px; width: 1px;" >
           <img id="seemore" src="../src/assets/seemore.png">
         </v-btn>
       </v-layout>
@@ -71,18 +72,28 @@
       <v-layout row wrap justify-center class="" style=" height:-webkit-fill-available; padding-top:1%;padding-bottom:1%;  background-size: auto 100%;">
 
         <v-flex xs12 sm12 md12 lg12>
-          <v-layout row align-center justify-center style="padding-top:10%; padding-bottom:4%">
-            <v-flex xs12 sm6 md6 lg6>
-              <v-layout column align-center justify-center>
-                <img src="../src/assets/tickets.png" style="width:40%;"></img>
-                <h4 class="black--text">Buy your tickets today!</h4>
+          <v-layout row align-center justify-center style="padding-top:7%; padding-bottom:0%">
+            <v-flex xs12 sm4 md4 lg4>
+              <v-layout column align-center justify-center class="black--text" style="padding-right:20%; padding-left:20%">
+                <p class="flow-text" style="font-size:20px"> 
+                  Lorem ipsum. Dolor sit amet. Consectetur adipiscing elit. Sed do eiusmod tempor. Incididunt ut labore. et dolore magna aliqua. Integer vitae justo. Eget magna fermentum. Iaculis eu non diam. 
+                </p>
               </v-layout>
 
             </v-flex>
-            <v-flex xs12 sm6 md6 lg6>
+            <v-flex xs12 sm4 md4 lg4>
+              <v-layout column align-center justify-center class="" style="">
+                <img src="../src/assets/tickets.png" style="width:80%;"></img>
+                <h4 class="flow-text" style="color: #F31160;font-size:30px;font-weight:500;">Buy your tickets! </h4> 
+                <v-icon large style="color: #5CC9F5">flight_takeoff</v-icon> 
+                <h4 class="flow-text" style="color: #5CC9F5;font-weight:400;">VISIT US</h4>
+              </v-layout>
+
+            </v-flex>
+            <v-flex xs12 sm4 md4 lg4>
               <v-layout column align-center justify-center class="black--text" style="padding-right:20%; padding-left:20%">
                 <p class="flow-text" style="font-size:20px"> 
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna fermentum iaculis eu non diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. 
+                  Lorem ipsum. Dolor sit amet. Consectetur adipiscing elit. Sed do eiusmod tempor. Incididunt ut labore. et dolore magna aliqua. Integer vitae justo. Eget magna fermentum. Iaculis eu non diam. 
                 </p>
               </v-layout>
             </v-flex>
@@ -93,98 +104,160 @@
           <v-layout row wrap justify-center style="padding-bottom:0px;">
             <v-flex xs12 sm12 md12 lg12 class="carousel shadowfilterfixed" id="carousel-responsive" style="height:200px;">
               <ul class="listsize" style="padding:0; ">
-                <li >
+                <li>
                   <a href="#">
                     <div class="block">
                       <img class="listsize" title="" alt="" src="../src/assets/huacapullana.png">
                       <div class="block-caption">
-                        <p class="flow-text white--text " style="font-size:30px;margin:0">
-                          HUACA PUCLLAN A MUSEUM
-                        </p>
+                        <div style="display: inline-block; vertical-align: middle;">
+                          <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
+                            HUACA <br> PUCLLAN <br> A MUSEUM
+                          </h1>
+                          <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
+                            LEARN MORE
+                          </h5>
+                        </div>
                       </div>
                     </div>
                   </a>
                 </li>
-                <li >
+                <li>
                   <a href="#">
                     <div class="block">
-                      <img title="" alt="" src="../src/assets/puentebarranco.png" class="listsize" >
+                      <img class="listsize" title="" alt="" src="../src/assets/puentebarranco.png">
                       <div class="block-caption">
-                        Puente de Barranco
+                        <div style="display: inline-block; vertical-align: middle;">
+                          <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
+                            BARRANCO <br> BRIDGE
+                          </h1>
+                          <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
+                            LEARN MORE
+                          </h5>
+                        </div>
                       </div>
                     </div>
                   </a>
                 </li>
-                <li >
+                <li>
                   <a href="#">
                     <div class="block">
-                      <img title="" alt="" src="../src/assets/plaza.png" class="listsize" >
+                      <img class="listsize" title="" alt="" src="../src/assets/plaza.png">
                       <div class="block-caption">
-                        Plaza de armas de Lima
+                        <div style="display: inline-block; vertical-align: middle;">
+                          <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
+                            PRINCIPAL <br> SQUARE <br> OF LIMA
+                          </h1>
+                          <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
+                            LEARN MORE
+                          </h5>
+                        </div>
                       </div>
                     </div>
                   </a>
                 </li>
-                <li >
+                <li>
                   <a href="#">
                     <div class="block">
-                      <img title="" alt="" src="../src/assets/huacapullana.png" class="listsize" >
+                      <img class="listsize" title="" alt="" src="../src/assets/huacapullana.png">
                       <div class="block-caption">
-                        Huaca Pullana
+                        <div style="display: inline-block; vertical-align: middle;">
+                          <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
+                            HUACA <br> PUCLLAN <br> A MUSEUM
+                          </h1>
+                          <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
+                            LEARN MORE
+                          </h5>
+                        </div>
                       </div>
                     </div>
                   </a>
                 </li>
-                <li >
+                <li>
                   <a href="#">
                     <div class="block">
-                      <img title="" alt="" src="../src/assets/puentebarranco.png" class="listsize" >
+                      <img class="listsize" title="" alt="" src="../src/assets/puentebarranco.png">
                       <div class="block-caption">
-                        Puente de Barranco
+                        <div style="display: inline-block; vertical-align: middle;">
+                          <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
+                            BARRANCO <br> BRIDGE
+                          </h1>
+                          <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
+                            LEARN MORE
+                          </h5>
+                        </div>
                       </div>
                     </div>
                   </a>
                 </li>
-                <li >
+                <li>
                   <a href="#">
                     <div class="block">
-                      <img title="" alt="" src="../src/assets/plaza.png"class="listsize" >
+                      <img class="listsize" title="" alt="" src="../src/assets/plaza.png">
                       <div class="block-caption">
-                        Plaza de armas de Lima
+                        <div style="display: inline-block; vertical-align: middle;">
+                          <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
+                            PRINCIPAL <br> SQUARE <br> OF LIMA
+                          </h1>
+                          <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
+                            LEARN MORE
+                          </h5>
+                        </div>
                       </div>
                     </div>
                   </a>
                 </li>
-                <li >
+                <li>
                   <a href="#">
                     <div class="block">
-                      <img title="" alt="" src="../src/assets/huacapullana.png" class="listsize" >
+                      <img class="listsize" title="" alt="" src="../src/assets/huacapullana.png">
                       <div class="block-caption">
-                        Huaca Pullana
+                        <div style="display: inline-block; vertical-align: middle;">
+                          <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
+                            HUACA <br> PUCLLAN <br> A MUSEUM
+                          </h1>
+                          <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
+                            LEARN MORE
+                          </h5>
+                        </div>
                       </div>
                     </div>
                   </a>
                 </li>
-                <li >
+                <li>
                   <a href="#">
                     <div class="block">
-                      <img title="" alt="" src="../src/assets/puentebarranco.png" class="listsize" >
+                      <img class="listsize" title="" alt="" src="../src/assets/puentebarranco.png">
                       <div class="block-caption">
-                        Puente de Barranco
+                        <div style="display: inline-block; vertical-align: middle;">
+                          <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
+                            BARRANCO <br> BRIDGE
+                          </h1>
+                          <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
+                            LEARN MORE
+                          </h5>
+                        </div>
                       </div>
                     </div>
                   </a>
                 </li>
-                <li >
+                <li>
                   <a href="#">
                     <div class="block">
-                      <img title="" alt="" src="../src/assets/plaza.png" class="listsize" >
+                      <img class="listsize" title="" alt="" src="../src/assets/plaza.png">
                       <div class="block-caption">
-                        Plaza de armas de Lima
+                        <div style="display: inline-block; vertical-align: middle;">
+                          <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
+                            PRINCIPAL <br> SQUARE <br> OF LIMA
+                          </h1>
+                          <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
+                            LEARN MORE
+                          </h5>
+                        </div>
                       </div>
                     </div>
                   </a>
                 </li>
+                
               </ul>
             </v-flex>
           </v-layout>
@@ -455,8 +528,8 @@ export default {
 ul, li, ol {
   list-style-type: none;
   padding: 0;
-  height: 250px;
-  width: 250px;
+  height: 220px;
+  width: 220px;
 }
 .shadowfilter {
   -webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.90));
@@ -483,11 +556,11 @@ ul, li, ol {
 }
 .block {
   display: block;
-  height: 250px;
+  height: 220px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  width: 250px;
+  width: 220px;
 }
 .block img {
   opacity: 1;
@@ -508,12 +581,17 @@ ul, li, ol {
   -moz-transition: all 0.2s ease-in-out 0s;
   -webkit-transition: all 0.2s ease-in-out 0s;
   -o-transition: all 0.2s ease-in-out 0s;
-  width: 250px;
-  height: 250px;
-  line-height: 250px; 
+  width: 220px;
+  height: 220px;
+  line-height: 220px; 
   text-align: center;
   vertical-align: middle;
 }
+.listsize{
+  height: 220px;
+  width: 220px;
+}
+
 .block:hover .block-caption {
   opacity: 1;
 }
@@ -535,9 +613,48 @@ ul, li, ol {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', endColorstr='#ffffff', GradientType=1 );
 }
 
-.listsize{
-  height: 250px;
-  width: 250px;
+/* BUTTON ARCOIRIS */
+
+* {
+  box-sizing: border-box;
+}
+
+.arcoirisbutton {
+  display: block;
+  height: 100%;
+  -webkit-animation: hue-rotate 5s linear infinite;
+          animation: hue-rotate 5s linear infinite;
+}
+
+
+@-webkit-keyframes hue-rotate {
+  from {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    -ms-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    -moz-filter: hue-rotate(360deg);
+    -ms-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes hue-rotate {
+  from {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    -ms-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    -moz-filter: hue-rotate(360deg);
+    -ms-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
 }
 
 </style>
