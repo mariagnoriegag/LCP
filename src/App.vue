@@ -5,12 +5,12 @@
       <v-flex lg4 style="width:20px">
         <v-toolbar-items class="" style="height: -webkit-fill-available;">
           <v-layout justify-center align-center >
-            <v-btn href="#included" class="white--text arrow hidden-sm-and-down" style="height: -webkit-fill-available;" flat>WHAT INCLUDED</v-btn>
-            <v-btn href="#useit" class="white--text arrow hidden-sm-and-down" style="height: -webkit-fill-available;" flat>HOW TO USE IT</v-btn>
-            <v-btn href="#benefits" class="white--text arrow hidden-sm-and-down" style="height: -webkit-fill-available;" flat>OTHER BENEFITS</v-btn>
-          <!--  -->
+            <v-btn id="btn_included" href="#included" class="white--text arrow hidden-sm-and-down" style="height: -webkit-fill-available;" flat>WHAT INCLUDED</v-btn>
+            <v-btn id="btn_useit" href="#useit" class="white--text arrow hidden-sm-and-down" style="height: -webkit-fill-available;" flat>HOW TO USE IT</v-btn>
+            <v-btn id="btn_benefits" href="#benefits" class="white--text arrow hidden-sm-and-down" style="height: -webkit-fill-available;" flat>OTHER BENEFITS</v-btn>
+            <!--  -->
 
-          <!-- MENU -->
+            <!-- MENU -->
            <!--  <v-menu offset-y open-on-hover bottom left full-width  class="hidden-md-and-up" style="display: inline-flex; align-items: center; text-align: center;">
               <v-btn style="height: 38px; width: 38px;" icon slot="activator" dark>
                 <v-icon large>more_vert</v-icon>
@@ -66,134 +66,127 @@
   <!-- MAIN -->
   <main >
     <!-- INCLUDED -->
-    <v-container id="included" fluid style="margin:0; padding:0; ">
-      <v-layout row wrap justify-center align-center class="black darken-4" style=" height:-webkit-fill-available; padding-top:1%;padding-bottom:1%;  background-size: auto 100%;">
+    <!-- #438496 #B37D4E #CD5360 #286DA8 #2c3e50 midnight-->
+    <v-container id="included" fluid style="margin:0; padding:0; " class="degradado" >
+      <v-layout row wrap justify-center class=" darken-4" style=" height:-webkit-fill-available; padding-top:1%;padding-bottom:1%;  background-size: auto 100%;">
+        
+
         <v-flex xs12 sm12 md12 lg12>
-          <v-layout justify-center align-center>
-
-            <v-parallax id="limagif" src="" height=-webkit-fill-available; style="width:100%; height:724px; padding:0; filter: grayscale(0%); ">
-              <v-layout row wrap justify-center align-center style="padding-bottom:0px;background: #243139">
-                <v-flex xs12 sm12 md12 lg12 class="carousel shadowfilterfixed" id="carousel-responsive" style="height:200px">
-                  <ul  style="padding:0; height:200px; width:200px;">
-                    <li >
-                      <a href="#">
-                        <div class="block">
-                          <img title="" alt="" src="../src/assets/huacapullana.png" style="width:200px; height:200px">
-                          <div class="block-caption">
-                            Huaca Pullana
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li >
-                      <a href="#">
-                        <div class="block">
-                          <img title="" alt="" src="../src/assets/puentebarranco.png" style="width:200px; height:200px">
-                          <div class="block-caption">
-                            Puente de Barranco
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li >
-                      <a href="#">
-                        <div class="block">
-                          <img title="" alt="" src="../src/assets/plaza.png" style="width:200px; height:200px">
-                          <div class="block-caption">
-                            Plaza de armas de Lima
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li >
-                      <a href="#">
-                        <div class="block">
-                          <img title="" alt="" src="../src/assets/huacapullana.png" style="width:200px; height:200px">
-                          <div class="block-caption">
-                            Huaca Pullana
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li >
-                      <a href="#">
-                        <div class="block">
-                          <img title="" alt="" src="../src/assets/puentebarranco.png" style="width:200px; height:200px">
-                          <div class="block-caption">
-                            Puente de Barranco
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li >
-                      <a href="#">
-                        <div class="block">
-                          <img title="" alt="" src="../src/assets/plaza.png" style="width:200px; height:200px">
-                          <div class="block-caption">
-                            Plaza de armas de Lima
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li >
-                      <a href="#">
-                        <div class="block">
-                          <img title="" alt="" src="../src/assets/huacapullana.png" style="width:200px; height:200px">
-                          <div class="block-caption">
-                            Huaca Pullana
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li >
-                      <a href="#">
-                        <div class="block">
-                          <img title="" alt="" src="../src/assets/puentebarranco.png" style="width:200px; height:200px">
-                          <div class="block-caption">
-                            Puente de Barranco
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li >
-                      <a href="#">
-                        <div class="block">
-                          <img title="" alt="" src="../src/assets/plaza.png" style="width:200px; height:200px">
-                          <div class="block-caption">
-                            Plaza de armas de Lima
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-
-
-                  </ul>
-                </v-flex>
-                <v-flex xs12 sm12 md12 lg12>
-                  <v-layout row align-center justify-center>
-                    <v-flex xs6 sm6 md6 lg6>
-                      <v-layout row wrap  align-center style="padding-left:40px">
-                        <h1 class="white--text shadowfilterfixed" style="margin:0">WHAT'S <br>INCLUDED</h1>
-                      </v-layout>
-                      
-                    </v-flex>
-                    <v-flex xs6 sm6 md6 lg6>
-                      <v-layout column align-center justify-center>
-                        <img src="../src/assets/tickets.png" style="width:40%;"></img>
-                        <h4 class="white--text">Buy your tickets today!</h4>
-                      </v-layout>
-
-                    </v-flex>
-                  </v-layout>
-                </v-flex>
-
+          <v-layout row align-center justify-center style="padding-top:10%; padding-bottom:4%">
+            <v-flex xs12 sm6 md6 lg6>
+              <v-layout column align-center justify-center>
+                <img src="../src/assets/tickets.png" style="width:40%;"></img>
+                <h4 class="white--text">Buy your tickets today!</h4>
               </v-layout>
-            </v-parallax>
+
+            </v-flex>
+            <v-flex xs12 sm6 md6 lg6>
+              <v-layout column align-center justify-center class="white--text" style="padding-right:20%">
+              <p style="font-size:20px"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna fermentum iaculis eu non diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. 
+              </p>
+            </v-layout>
+            </v-flex>
           </v-layout>
         </v-flex>
 
-
-
+        <v-flex xs12 sm12 md12 lg12>
+          <v-layout row wrap justify-center style="padding-bottom:0px;">
+            <v-flex xs12 sm12 md12 lg12 class="carousel shadowfilterfixed" id="carousel-responsive" style="height:200px;">
+              <ul class="listsize" style="padding:0; ">
+                <li >
+                  <a href="#">
+                    <div class="block">
+                      <img class="listsize" title="" alt="" src="../src/assets/huacapullana.png">
+                      <div class="block-caption">
+                        Huaca Pullana
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li >
+                  <a href="#">
+                    <div class="block">
+                      <img title="" alt="" src="../src/assets/puentebarranco.png" class="listsize" >
+                      <div class="block-caption">
+                        Puente de Barranco
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li >
+                  <a href="#">
+                    <div class="block">
+                      <img title="" alt="" src="../src/assets/plaza.png" class="listsize" >
+                      <div class="block-caption">
+                        Plaza de armas de Lima
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li >
+                  <a href="#">
+                    <div class="block">
+                      <img title="" alt="" src="../src/assets/huacapullana.png" class="listsize" >
+                      <div class="block-caption">
+                        Huaca Pullana
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li >
+                  <a href="#">
+                    <div class="block">
+                      <img title="" alt="" src="../src/assets/puentebarranco.png" class="listsize" >
+                      <div class="block-caption">
+                        Puente de Barranco
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li >
+                  <a href="#">
+                    <div class="block">
+                      <img title="" alt="" src="../src/assets/plaza.png"class="listsize" >
+                      <div class="block-caption">
+                        Plaza de armas de Lima
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li >
+                  <a href="#">
+                    <div class="block">
+                      <img title="" alt="" src="../src/assets/huacapullana.png" class="listsize" >
+                      <div class="block-caption">
+                        Huaca Pullana
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li >
+                  <a href="#">
+                    <div class="block">
+                      <img title="" alt="" src="../src/assets/puentebarranco.png" class="listsize" >
+                      <div class="block-caption">
+                        Puente de Barranco
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li >
+                  <a href="#">
+                    <div class="block">
+                      <img title="" alt="" src="../src/assets/plaza.png" class="listsize" >
+                      <div class="block-caption">
+                        Plaza de armas de Lima
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </v-flex>
+          </v-layout>
+        </v-flex>
 
       </v-layout>
     </v-container>
@@ -286,45 +279,102 @@ $(document).ready(function() {
     console.log(toplogo)
     console.log(windowScroll)
 
-    if (windowScroll > windowHeight - 65 ) {
+    if (windowScroll > windowHeight - 50 && windowScroll < (2*windowHeight)-50) {
       $('#mylogo').show();
-      $('#toolbar1').removeClass('transparent');
-      $('#toolbar1').removeClass('elevation-0');
-      $('#toolbar1').addClass('pink darken-2');
-      $('#toolbar1').addClass('elevation-4');
-      $('#bb').removeClass('orange');
-      $('#bb').removeClass('white--text');
-      $('#bb').addClass('white');
-      $('#bb').addClass('pink--text');
+      //$('#toolbar1').removeClass('transparent');
+      //$('#toolbar1').removeClass('elevation-0');
+      //$('#toolbar1').addClass('pink darken-2');
+      //$('#toolbar1').css("background-color", "#CD5360");
+      //$('#toolbar1').addClass('elevation-4');
+      //$('#bb').removeClass('orange');
+      //$('#bb').removeClass('white--text');
+      //$('#bb').addClass('white');
+      //$('#bb').addClass('pink--text');
       $('#seemore').fadeOut();
+
+      $('#btn_included').removeClass('white--text');
+      $('#btn_included').addClass('orange--text text--darken-3');
+
+      $('#btn_useit').removeClass('blue--text text--darken-3');
+      $('#btn_useit').addClass('white--text');
+
+      $('#btn_benefits').removeClass('pink--text text--darken-3');
+      $('#btn_benefits').addClass('white--text');
+
+    } else if(windowScroll > (2*windowHeight)-50 && windowScroll < (3*windowHeight)-50) {
+      $('#mylogo').show();
+      $('#seemore').fadeOut();
+
+      $('#btn_included').removeClass('orange--text text--darken-3');
+      $('#btn_included').addClass('white--text');
+
+      $('#btn_useit').removeClass('white--text');
+      $('#btn_useit').addClass('blue--text text--darken-3');
+
+      $('#btn_benefits').removeClass('pink--text text--darken-3');
+      $('#btn_benefits').addClass('white--text');
+
+    } else if(windowScroll > (3*windowHeight)-50 && windowScroll < (4*windowHeight)-50) {
+      $('#mylogo').show();
+      $('#seemore').fadeOut();
+
+      $('#btn_included').removeClass('orange--text text--darken-3');
+      $('#btn_included').addClass('white--text');
+
+      $('#btn_useit').removeClass('blue--text text--darken-3');
+      $('#btn_useit').addClass('white--text');
+
+      $('#btn_benefits').removeClass('white--text');
+      $('#btn_benefits').addClass('pink--text text--darken-3');
+
     } else if(newHeight>=stopHeight ){
       if (windowScroll >= 10){
         $('#seemore').fadeOut();
         $("#logoimg").show();
         $('#logoimg').css("height", newHeight);
-        $('#toolbar1').removeClass('pink darken-2');
-        $('#toolbar1').removeClass('elevation-4');
+        //$('#toolbar1').removeClass('pink darken-2');
+        $('#toolbar1').css("background-color", "transparent");
+        //$('#toolbar1').removeClass('elevation-4');
         $('#toolbar1').addClass('transparent');
         $('#toolbar1').addClass('elevation-0');
-        $('#bb').removeClass('white');
-        $('#bb').removeClass('pink--text');
+        //$('#bb').removeClass('white');
+        //$('#bb').removeClass('pink--text');
         $('#bb').addClass('orange');
         $('#bb').addClass('white--text');
         $('#mylogo').hide(40);
+        
+        $('#btn_included').removeClass('orange--text text--darken-3');
+        $('#btn_included').addClass('white--text');
+
+        $('#btn_useit').removeClass('blue--text text--darken-3');
+        $('#btn_useit').addClass('white--text');
+
+        $('#btn_benefits').removeClass('pink--text text--darken-3');
+        $('#btn_benefits').addClass('white--text');
       }
       else {
         $('#seemore').fadeIn();
         $("#logoimg").show();
         $('#logoimg').css("height", newHeight);
-        $('#toolbar1').removeClass('pink darken-2');
-        $('#toolbar1').removeClass('elevation-4');
+        //$('#toolbar1').removeClass('pink darken-2');
+        $('#toolbar1').css("background-color", "transparent");
+        //$('#toolbar1').removeClass('elevation-4');
         $('#toolbar1').addClass('transparent');
         $('#toolbar1').addClass('elevation-0');
-        $('#bb').removeClass('white');
-        $('#bb').removeClass('pink--text');
+        //$('#bb').removeClass('white');
+        //$('#bb').removeClass('pink--text');
         $('#bb').addClass('orange');
         $('#bb').addClass('white--text');
         $('#mylogo').hide();
+        
+        $('#btn_included').removeClass('orange--text text--darken-3');
+        $('#btn_included').addClass('white--text');
+
+        $('#btn_useit').removeClass('blue--text text--darken-3');
+        $('#btn_useit').addClass('white--text');
+
+        $('#btn_benefits').removeClass('pink--text text--darken-3');
+        $('#btn_benefits').addClass('white--text');
       }
     } else if (windowScroll>=toplogo-5){
       $('#mylogo').show();
@@ -333,16 +383,24 @@ $(document).ready(function() {
     } else {
       $("#logoimg").show();
       $('#logoimg').css("height", stopHeight);
-      $('#toolbar1').removeClass('pink darken-2');
+      //$('#toolbar1').removeClass('pink darken-2');
+      $('#toolbar1').css("background-color", "transparent");
       $('#toolbar1').removeClass('elevation-4');
       $('#toolbar1').addClass('transparent');
       $('#toolbar1').addClass('elevation-0');
-      $('#bb').removeClass('white');
-      $('#bb').removeClass('pink--text');
+      //$('#bb').removeClass('white');
+      //$('#bb').removeClass('pink--text');
       $('#bb').addClass('orange');
       $('#bb').addClass('white--text');
       $('#mylogo').hide();
-      
+      $('#btn_included').removeClass('orange--text text--darken-3');
+      $('#btn_included').addClass('white--text');
+
+      $('#btn_useit').removeClass('blue--text text--darken-3');
+      $('#btn_useit').addClass('white--text');
+
+      $('#btn_benefits').removeClass('pink--text text--darken-3');
+      $('#btn_benefits').addClass('white--text');
     }
   });
 
@@ -373,8 +431,8 @@ export default {
 ul, li, ol {
   list-style-type: none;
   padding: 0;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
 }
 .shadowfilter {
   -webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.90));
@@ -392,7 +450,7 @@ ul, li, ol {
 }
 
 .hoveropacity {
-  opacity: 0.5;
+  opacity: 1;
 
 }
 
@@ -408,23 +466,23 @@ ul, li, ol {
 
 .block {
   display: block;
-  height: 200px;
+  height: 250px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  width: 200px;
+  width: 250px;
 }
 .block img {
-  opacity: 0.5;
+  opacity: 1;
   transition: all 0.2s ease-in-out 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
   -webkit-transition: all 0.2s ease-in-out 0s;
   -o-transition: all 0.2s ease-in-out 0s;
 }
 .block .block-caption {
-  background: rgba(0,0,0,0.6);
+  background: rgba(,0,0,0.2);
   bottom: 0;
-  color: #fff;
+  color: #000;
   display: table;
   opacity: 0;
   padding: 10px;
@@ -433,22 +491,38 @@ ul, li, ol {
   -moz-transition: all 0.2s ease-in-out 0s;
   -webkit-transition: all 0.2s ease-in-out 0s;
   -o-transition: all 0.2s ease-in-out 0s;
-  width: 200px;
-  height: 200px;
-  line-height: 200px; 
+  width: 250px;
+  height: 250px;
+  line-height: 250px; 
   text-align: center;
   vertical-align: middle;
 
 }
 .block:hover .block-caption {
-  opacity: 0.9;
+  opacity: 1;
 }
 .block:hover img {
-  opacity: 1;
+  opacity: 0.7;
   transform: scale(1.1) rotateZ(-2deg);
   -moz-transform: scale(1.1) rotateZ(-2deg);
   -webkit-transform: scale(1.1) rotateZ(-2deg);
   -o-transform: scale(1.1) rotateZ(-2deg);
+}
+
+.degradado{
+  background: rgba(119,201,212,1);
+  background: -moz-linear-gradient(left, rgba(119,201,212,1) 0%, rgba(87,188,144,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(119,201,212,1)), color-stop(100%, rgba(87,188,144,1)));
+  background: -webkit-linear-gradient(left, rgba(119,201,212,1) 0%, rgba(87,188,144,1) 100%);
+  background: -o-linear-gradient(left, rgba(119,201,212,1) 0%, rgba(87,188,144,1) 100%);
+  background: -ms-linear-gradient(left, rgba(119,201,212,1) 0%, rgba(87,188,144,1) 100%);
+  background: linear-gradient(to right, rgba(119,201,212,1) 0%, rgba(87,188,144,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', endColorstr='#57bc90', GradientType=1 );
+}
+
+.listsize{
+  height: 250px;
+  width: 250px;
 }
 
 </style>
