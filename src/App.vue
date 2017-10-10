@@ -39,7 +39,11 @@
         <v-toolbar-items class="">
           <v-layout justify-center align-center>
             <v-btn href="#" class="white--text" style="height: 38px; width: 38px;" icon><v-icon>person</v-icon></v-btn>
-            <v-btn id = "bb" href="#" class="arcoirisbutton orange lighten-3 white--text elevation-0 shadowfilter" round>BUY NOW</v-btn>
+            <v-btn id ="bb" class="arcoirisbutton orange lighten-3 white--text elevation-0 shadowfilter" round>BUY NOW</v-btn>
+            <!-- CART BUY 
+            <button id="btn_buy">CLOSE</button>
+          -->
+            
 
           </v-layout>
         </v-toolbar-items>
@@ -72,9 +76,9 @@
       <v-layout row wrap justify-center class="" style=" height:-webkit-fill-available; padding-top:1%;padding-bottom:1%;  background-size: auto 100%;">
 
         <v-flex xs12 sm12 md12 lg12>
-          <v-layout row align-center justify-center style="padding-top:7%; padding-bottom:0%">
+          <v-layout row align-center justify-center style="padding-top:5%; padding-bottom:0%">
             <v-flex xs12 sm4 md4 lg4>
-              <v-layout column align-center justify-center class="black--text" style="padding-right:20%; padding-left:20%">
+              <v-layout column align-center justify-center class="black--text" style="padding-right:20%; padding-left:20%" >
                 <p class="flow-text" style="font-size:20px"> 
                   Lorem ipsum. Dolor sit amet. Consectetur adipiscing elit. Sed do eiusmod tempor. Incididunt ut labore. et dolore magna aliqua. Integer vitae justo. Eget magna fermentum. Iaculis eu non diam. 
                 </p>
@@ -90,12 +94,37 @@
               </v-layout>
 
             </v-flex>
-            <v-flex xs12 sm4 md4 lg4>
+            <v-flex xs12 sm4 md4 lg4 id="hidden_included">
               <v-layout column align-center justify-center class="black--text" style="padding-right:20%; padding-left:20%">
                 <p class="flow-text" style="font-size:20px"> 
                   Lorem ipsum. Dolor sit amet. Consectetur adipiscing elit. Sed do eiusmod tempor. Incididunt ut labore. et dolore magna aliqua. Integer vitae justo. Eget magna fermentum. Iaculis eu non diam. 
                 </p>
               </v-layout>
+            </v-flex>
+            <v-flex id="cart" xs12 sm4 md4 lg4  >
+              <div class="app active">
+              <div >
+                <div class="cust-num" style="">
+                  <p style="margin:0">10.10.2017 (date)</p><br>
+                  </div>
+                  <div class="cust-info" style="margin-bottom:10px; margin-top:0">
+                    <h2 style="font-size:14px; margin:0; padding:0">Hi, Traveler!</h2>
+                    <p style="padding-top:5px;padding-bottom:5px;margin:0">Buy tickets for a great adventure in Lima, Peru</p>
+                  </div>
+                </div>
+                <div class="maindiv">
+                </div>
+                <div class="footerdiv">
+                  <h2 class="center" style="font-size:18px; font-weight:600">LIMA CITY PASS</h2>
+                  <ul style="height: 50px; width: auto;">
+                    <li class="li_li" style="height:auto"> Number of tickets <span> $48.00 </span> </li>
+                  </ul>
+                  <div class="total" style="margin:0">
+                    <p>Total <span>$231.00</span></p>
+                  </div>
+                </div>
+              </div>
+              </div>
             </v-flex>
           </v-layout>
         </v-flex>
@@ -337,6 +366,13 @@ $(document).ready(function() {
       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
     });
   });
+  var cc = 0;
+  
+  $( '#bb' ).click(function() {
+    $( '.app' ).toggleClass( 'active' );
+    
+    
+  });
 
   var imageHeight = parseInt($('#logoimg').css('height')),
   stopHeight = 62.84;
@@ -502,6 +538,19 @@ $(document).ready(function() {
 
 });
 
+// CART BUY BUTTON
+
+//var app = document.querySelector('.app');
+//var button = document.querySelector('button');
+
+//button.addEventListener('click', function() {
+/*$(function() {
+  $('#bb').on('click', function() {
+    app.classList.toggle('active');
+    app.classList.contains('active') ? this.innerHTML = "CLOSE" : this.innerHTML = "OPEN";
+  });
+});*/
+
 
 
 export default {
@@ -624,8 +673,8 @@ ul, li, ol {
 .arcoirisbutton {
   display: block;
   height: 100%;
-  -webkit-animation: hue-rotate 5s linear infinite;
-          animation: hue-rotate 5s linear infinite;
+  -webkit-animation: hue-rotate 15s linear infinite;
+          animation: hue-rotate 15s linear infinite;
 }
 
 
@@ -670,6 +719,229 @@ ul, li, ol {
     50% { transform: rotateY(45deg); }
     70% { transform: rotateY(340deg); }
     100% { transform: rotateY(360deg); }
+}
+
+/* BUTTON BUY NOW CART */
+
+.center {
+  text-align: center;
+}
+
+.app {
+  display: flex;
+  flex-flow: column;
+  margin: 50px auto 0;
+  width: 300px;
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: top center;
+  transition: all 0.8s cubic-bezier(.71, 0, .61, 1.36) 1.8s;
+}
+
+.app > * {
+  /* don't use universal selectors at real world project. its known to be slow */
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.cust-num {
+  color: #757575;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.7;
+  padding: 15px 30px;
+}
+
+.cust-num svg {
+  margin-right: 15px;
+}
+
+.cust-info {
+  margin: 15px 0;
+  padding: 0 30px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease 2s;
+  overflow: hidden;
+}
+
+.cust-info h3 {
+  font-weight: 400;
+}
+
+.cust-info p {
+  color: #757575;
+  font-size: 12px;
+  padding: 10px 0 0;
+}
+
+.cust-info:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 6px;
+  background: rgb(0, 157, 223);
+  left: -20px;
+  transition: all 0.5s ease 2s;
+}
+
+
+.li_li {
+  color: #707575;
+  font-size: 12px;
+  list-style: none;
+  padding: 15px 0;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.8s ease;
+}
+
+.li_li:nth-child(1) {
+  transition-delay: 0.6s;
+}
+
+.li_li:nth-child(2) {
+  transition-delay: 0.4s;
+}
+
+.li_li:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.li_li:not(:last-child) {
+  border-bottom: 1px dashed #ccc;
+  margin-bottom: 5px;
+}
+
+.li_li i {
+  margin-right: 15px;
+  font-style: normal;
+}
+
+.li_li span {
+  color: #424242;
+  float: right;
+  font-weight: 500;
+}
+
+.total {
+  border-top: 2px solid #FFC107;
+  padding-top: 15px;
+  margin: 0 0 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  left: -50px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: left 0.8s ease, opacity 0.5s ease, transform 0s ease 1.5s;
+}
+.total p {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0s ease 1.5s;
+}
+.total span {
+  float: right;
+}
+
+.maindiv {
+  border-bottom: 2px dotted #F06292;
+  border-radius: 0 0 4px 4px;
+  padding: 0 30px;
+  position: relative;
+  transform: perspective(1000px) rotateX(-90deg);
+  transform-origin: top;
+  transition: all 0.5s ease 1.7s;
+}
+
+.maindiv h3 {
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0;
+  margin: 15px 0;
+  transform: translateY(10px);
+  transition: all 0.5s ease 0.8s;
+}
+
+.maindiv:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  background: #fff;
+}
+
+.footerdiv {
+  border-radius: 4px;
+  padding: 15px 30px;
+  transform: perspective(1000px) rotateX(-90deg);
+  transform-origin: top;
+  transition: all 0.5s cubic-bezier(.42, -1.04, .79, 1) 1.1s;
+}
+
+.footerdiv svg {
+  fill: #757575;
+}
+
+.active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.8s ease;
+}
+
+.active .cust-info {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s ease 0.5s;
+}
+
+.active .cust-info:before {
+  left: 0;
+  transition: all 1s ease 0.7s;
+}
+
+.active .maindiv {
+  transform: perspective(1000px) rotateX(0deg);
+  transition: all 0.5s ease 0.5s;
+}
+
+.active .maindiv h3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease 0.8s;
+}
+
+.active li {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s ease;
+}
+
+.active li:nth-child(1) {
+  transition-delay: 1s;
+}
+
+
+.active .total {
+  opacity: 1;
+  transform: translateY(0);
+  left: 0;
+  transition: transform 0.8s ease 1s, opacity 0.8s ease 1s;
+}
+.active .total p {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease 1.5s;
+}
+.active .footerdiv {
+  transform: perspective(1000px) rotateX(0deg);
+  transition: all 0.5s ease 0.5s;
 }
 
 </style>
