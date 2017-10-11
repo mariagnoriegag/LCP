@@ -464,7 +464,9 @@ $( '#bb' ).click(function() {
       */
       if (windowScroll > (windowHeight * 1.08)) {
         $( '.app' ).removeClass( 'active' );
-      } 
+      } if ($('.app').hasClass('active')) {
+        $('#hidden_included').fadeOut();
+      }
        
     
 
