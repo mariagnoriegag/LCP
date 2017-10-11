@@ -9,7 +9,9 @@
             <v-btn id="btn_useit" href="#useit" class="white--text arrow hidden-sm-and-down" style="height: -webkit-fill-available;" flat>HOW TO USE IT</v-btn>
             <v-btn id="btn_benefits" href="#benefits" class="white--text arrow hidden-sm-and-down" style="height: -webkit-fill-available;" flat>OTHER BENEFITS</v-btn>
             <!--  -->
-
+            <v-btn id="btn_included" href="#included" class="white--text arrow hidden-md-and-up" style="height: 45px; width: 45px;" flat icon><v-icon>explore</v-icon></v-btn>
+            <v-btn id="btn_useit" href="#useit" class="white--text arrow hidden-md-and-up" style="height: 45px; width: 45px;" flat icon><v-icon>swap_calls</v-icon></v-btn>
+            <v-btn id="btn_benefits" href="#benefits" class="white--text arrow hidden-md-and-up" style="height: 45px; width: 45px;" flat icon><v-icon>card_giftcard</v-icon></v-btn>
             <!-- MENU -->
            <!--  <v-menu offset-y open-on-hover bottom left full-width  class="hidden-md-and-up" style="display: inline-flex; align-items: center; text-align: center;">
               <v-btn style="height: 38px; width: 38px;" icon slot="activator" dark>
@@ -82,7 +84,7 @@
           <v-layout row align-center justify-left style="padding-top:80px; padding-bottom:0%">
             <v-flex xs12 sm12 md4 lg4 class="hidden-sm-and-down">
               <v-layout column align-center justify-center class="black--text " style="padding-right:20%; padding-left:20%" >
-                <p class="flow-text" style="font-size:20px"> 
+                <p class="flow-text" style=""> 
                   Lorem ipsum. Dolor sit amet. Consectetur adipiscing elit. Sed do eiusmod tempor. Incididunt ut labore. et dolore magna aliqua. Integer vitae justo. Eget magna fermentum. Iaculis eu non diam. 
                 </p>
               </v-layout>
@@ -90,13 +92,13 @@
             </v-flex>
             <v-flex xs8 sm7 md4 lg4 offset-xs2 offset-sm0>
               <v-layout column align-center justify-center class="" style="">
-                <img class="rotateYaxis" src="../src/assets/tickets.png" style="width:80%;"></img>
+                <img class="rotateYaxis" src="../src/assets/tickets.png" style="width:70%;"></img>
                 <h4 class="flow-text" style="color: #F31160;font-size:30px;font-weight:500;">Buy your tickets! </h4> 
               </v-layout>
             </v-flex>
             <v-flex xs12 sm5 md4 lg4 class="hidden-xs-only">
               <v-layout column align-center justify-center class="black--text" style="padding-right:20%; padding-left:20%">
-                <p id="hidden_included" class="flow-text" style="font-size:20px"> 
+                <p id="hidden_included" class="flow-text" style=""> 
                   Lorem ipsum. Dolor sit amet. Consectetur adipiscing elit. Sed do eiusmod tempor. Incididunt ut labore. et dolore magna aliqua. Integer vitae justo. Eget magna fermentum. Iaculis eu non diam. 
                 </p>
               </v-layout>
