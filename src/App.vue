@@ -39,10 +39,13 @@
         <v-toolbar-items class="">
           <v-layout justify-center align-center>
             <v-btn href="#" class="white--text" style="height: 38px; width: 38px;" icon><v-icon>person</v-icon></v-btn>
-            <v-btn id ="bb" class="arcoirisbutton orange lighten-3 white--text elevation-0 shadowfilter" round>BUY NOW</v-btn>
-            <!-- CART BUY 
-            <button id="btn_buy">CLOSE</button>
-          -->
+            <!-- <v-btn id ="bb" class="arcoirisbutton orange lighten-3 white--text elevation-0 shadowfilter" style="left:10%" round>BUY NOW</v-btn>
+            -->
+            <v-btn id ="bb" class="arcoirisbutton orange lighten-3 white--text elevation-0 shadowfilter" style="left:10%; height: 45px; width: 45px; padding:0" round>
+              <v-layout row wrap justify-center >
+                <v-icon>local_activity</v-icon>
+              </v-layout>
+            </v-btn>
             
 
           </v-layout>
@@ -101,13 +104,10 @@
                 </p>
               </v-layout>
             </v-flex>
-            <v-flex id="cart" xs12 sm4 md4 lg4  >
-              <div class="app active">
-              <div >
-                <div class="cust-num" style="">
-                  <p style="margin:0">10.10.2017 (date)</p><br>
-                  </div>
-                  <div class="cust-info" style="margin-bottom:10px; margin-top:0">
+            <v-flex id="cart" xs12 sm4 md4 lg4  style="position: fixed; top: 5em; right: 10px;">
+              <div class="app active" style="margin:0">
+                <div>
+                  <div class="cust-info" style="margin-bottom:10px; margin-top:10px">
                     <h2 style="font-size:14px; margin:0; padding:0">Hi, Traveler!</h2>
                     <p style="padding-top:5px;padding-bottom:5px;margin:0">Buy tickets for a great adventure in Lima, Peru</p>
                   </div>
@@ -121,179 +121,185 @@
                   </ul>
                   <div class="total" style="margin:0">
                     <p>Total <span>$231.00</span></p>
+
                   </div>
+                  <v-flex xs12 sm12 md12 lg12 style="margin:0; padding:0; border-top:0" class="total">
+                    <v-layout justify-center align-center style="padding-bottom:0px; display: grid;">
+                      <v-btn id ="buynow" class="pink lighten-2 white--text elevation-0 shadowfilter" style="" round>BUY NOW</v-btn>
+                    </v-layout>
+                  </v-flex>
                 </div>
               </div>
-              </div>
-            </v-flex>
-          </v-layout>
-        </v-flex>
+            </div>
+          </v-flex>
+        </v-layout>
+      </v-flex>
 
-        <v-flex xs12 sm12 md12 lg12>
-          <v-layout row wrap justify-center style="padding-bottom:0px;">
-            <v-flex xs12 sm12 md12 lg12 class="carousel shadowfilterfixed" id="carousel-responsive" style="height:200px;">
-              <ul class="listsize" style="padding:0; ">
-                <li>
-                  <a href="#">
-                    <div class="block">
-                      <img class="listsize" title="" alt="" src="../src/assets/huacapullana.png">
-                      <div class="block-caption">
-                        <div style="display: inline-block; vertical-align: middle;">
-                          <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
-                            HUACA <br> PUCLLAN <br> A MUSEUM
-                          </h1>
-                          <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
-                            LEARN MORE
-                          </h5>
-                        </div>
+      <v-flex xs12 sm12 md12 lg12>
+        <v-layout row wrap justify-center style="padding-bottom:0px;">
+          <v-flex xs12 sm12 md12 lg12 class="carousel shadowfilterfixed" id="carousel-responsive" style="height:200px;">
+            <ul class="listsize" style="padding:0; ">
+              <li>
+                <a href="#">
+                  <div class="block">
+                    <img class="listsize" title="" alt="" src="../src/assets/huacapullana.png">
+                    <div class="block-caption">
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
+                          HUACA <br> PUCLLAN <br> A MUSEUM
+                        </h1>
+                        <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
+                          LEARN MORE
+                        </h5>
                       </div>
                     </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="block">
-                      <img class="listsize" title="" alt="" src="../src/assets/puentebarranco.png">
-                      <div class="block-caption">
-                        <div style="display: inline-block; vertical-align: middle;">
-                          <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
-                            BARRANCO <br> BRIDGE
-                          </h1>
-                          <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
-                            LEARN MORE
-                          </h5>
-                        </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="block">
+                    <img class="listsize" title="" alt="" src="../src/assets/puentebarranco.png">
+                    <div class="block-caption">
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
+                          BARRANCO <br> BRIDGE
+                        </h1>
+                        <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
+                          LEARN MORE
+                        </h5>
                       </div>
                     </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="block">
-                      <img class="listsize" title="" alt="" src="../src/assets/plaza.png">
-                      <div class="block-caption">
-                        <div style="display: inline-block; vertical-align: middle;">
-                          <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
-                            PRINCIPAL <br> SQUARE <br> OF LIMA
-                          </h1>
-                          <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
-                            LEARN MORE
-                          </h5>
-                        </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="block">
+                    <img class="listsize" title="" alt="" src="../src/assets/plaza.png">
+                    <div class="block-caption">
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
+                          PRINCIPAL <br> SQUARE <br> OF LIMA
+                        </h1>
+                        <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
+                          LEARN MORE
+                        </h5>
                       </div>
                     </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="block">
-                      <img class="listsize" title="" alt="" src="../src/assets/huacapullana.png">
-                      <div class="block-caption">
-                        <div style="display: inline-block; vertical-align: middle;">
-                          <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
-                            HUACA <br> PUCLLAN <br> A MUSEUM
-                          </h1>
-                          <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
-                            LEARN MORE
-                          </h5>
-                        </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="block">
+                    <img class="listsize" title="" alt="" src="../src/assets/huacapullana.png">
+                    <div class="block-caption">
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
+                          HUACA <br> PUCLLAN <br> A MUSEUM
+                        </h1>
+                        <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
+                          LEARN MORE
+                        </h5>
                       </div>
                     </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="block">
-                      <img class="listsize" title="" alt="" src="../src/assets/puentebarranco.png">
-                      <div class="block-caption">
-                        <div style="display: inline-block; vertical-align: middle;">
-                          <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
-                            BARRANCO <br> BRIDGE
-                          </h1>
-                          <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
-                            LEARN MORE
-                          </h5>
-                        </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="block">
+                    <img class="listsize" title="" alt="" src="../src/assets/puentebarranco.png">
+                    <div class="block-caption">
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
+                          BARRANCO <br> BRIDGE
+                        </h1>
+                        <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
+                          LEARN MORE
+                        </h5>
                       </div>
                     </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="block">
-                      <img class="listsize" title="" alt="" src="../src/assets/plaza.png">
-                      <div class="block-caption">
-                        <div style="display: inline-block; vertical-align: middle;">
-                          <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
-                            PRINCIPAL <br> SQUARE <br> OF LIMA
-                          </h1>
-                          <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
-                            LEARN MORE
-                          </h5>
-                        </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="block">
+                    <img class="listsize" title="" alt="" src="../src/assets/plaza.png">
+                    <div class="block-caption">
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
+                          PRINCIPAL <br> SQUARE <br> OF LIMA
+                        </h1>
+                        <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
+                          LEARN MORE
+                        </h5>
                       </div>
                     </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="block">
-                      <img class="listsize" title="" alt="" src="../src/assets/huacapullana.png">
-                      <div class="block-caption">
-                        <div style="display: inline-block; vertical-align: middle;">
-                          <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
-                            HUACA <br> PUCLLAN <br> A MUSEUM
-                          </h1>
-                          <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
-                            LEARN MORE
-                          </h5>
-                        </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="block">
+                    <img class="listsize" title="" alt="" src="../src/assets/huacapullana.png">
+                    <div class="block-caption">
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
+                          HUACA <br> PUCLLAN <br> A MUSEUM
+                        </h1>
+                        <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
+                          LEARN MORE
+                        </h5>
                       </div>
                     </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="block">
-                      <img class="listsize" title="" alt="" src="../src/assets/puentebarranco.png">
-                      <div class="block-caption">
-                        <div style="display: inline-block; vertical-align: middle;">
-                          <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
-                            BARRANCO <br> BRIDGE
-                          </h1>
-                          <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
-                            LEARN MORE
-                          </h5>
-                        </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="block">
+                    <img class="listsize" title="" alt="" src="../src/assets/puentebarranco.png">
+                    <div class="block-caption">
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
+                          BARRANCO <br> BRIDGE
+                        </h1>
+                        <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
+                          LEARN MORE
+                        </h5>
                       </div>
                     </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="block">
-                      <img class="listsize" title="" alt="" src="../src/assets/plaza.png">
-                      <div class="block-caption">
-                        <div style="display: inline-block; vertical-align: middle;">
-                          <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
-                            PRINCIPAL <br> SQUARE <br> OF LIMA
-                          </h1>
-                          <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
-                            LEARN MORE
-                          </h5>
-                        </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="block">
+                    <img class="listsize" title="" alt="" src="../src/assets/plaza.png">
+                    <div class="block-caption">
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <h1 class=" white--text " style="font-size:30px;margin:0;font-weight:700;line-height: 120%;">
+                          PRINCIPAL <br> SQUARE <br> OF LIMA
+                        </h1>
+                        <h5 class="flow-text white--text " style="font-size:13px;margin:0;font-weight:700;">
+                          LEARN MORE
+                        </h5>
                       </div>
                     </div>
-                  </a>
-                </li>
-                
-              </ul>
-            </v-flex>
-          </v-layout>
-        </v-flex>
+                  </div>
+                </a>
+              </li>
 
-      </v-layout>
-    </v-container>
+            </ul>
+          </v-flex>
+        </v-layout>
+      </v-flex>
+
+    </v-layout>
+  </v-container>
 
 
 
@@ -360,19 +366,34 @@
 
 $(document).ready(function() {
   $('#mylogo').hide();
+  //$('#hidden_included').hide();
+  //$( '.app' ).removeClass('active',1);
+  
 
   $(function() {
     $('.arrow').on('click', function() {
       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
     });
   });
-  var cc = 0;
   
-  $( '#bb' ).click(function() {
+  var cc = 0;
+  $('#bb').on('click', function() {
+
+   if ($('.app').hasClass('active')) {
+     $('.app').removeClass('active');
+   }
+   else
+   {
+     $('.app').addClass('active');
+   }
+
+ });
+
+
+  /*$( '#bb' ).click(function() {
     $( '.app' ).toggleClass( 'active' );
     
-    
-  });
+  });*/
 
   var imageHeight = parseInt($('#logoimg').css('height')),
   stopHeight = 62.84;
@@ -415,6 +436,13 @@ $(document).ready(function() {
       $('#btn_benefits').removeClass('shadowfilterfixed');
       //$('#btn_benefits').addClass('white--text');
 
+      
+      if (windowScroll > (windowHeight * 1.08)) {
+        $( '.app' ).removeClass( 'active' );
+      } else {
+        $( '.app' ).addClass( 'active' );
+      }
+
     } else if(windowScroll > (2*windowHeight)-50 && windowScroll < (3*windowHeight)-50) {
       $('#mylogo').show();
       $('#toolbar1').css("background-color", "#6ed1a2");
@@ -431,6 +459,7 @@ $(document).ready(function() {
       //$('#btn_benefits').removeClass('pink--text text--lighten-3');
       $('#btn_benefits').removeClass('shadowfilterfixed');
       //$('#btn_benefits').addClass('white--text');
+      
 
     } else if(windowScroll > (3*windowHeight)-50 && windowScroll < (4*windowHeight)-50) {
       $('#mylogo').show();
@@ -448,6 +477,7 @@ $(document).ready(function() {
       //$('#btn_benefits').removeClass('white--text');
       //$('#btn_benefits').addClass('pink--text text--lighten-3');
       $('#btn_benefits').addClass('shadowfilterfixed');
+      
 
     } else if(newHeight>=stopHeight ){
       if (windowScroll >= 10){
@@ -476,6 +506,7 @@ $(document).ready(function() {
         //$('#btn_benefits').removeClass('pink--text text--lighten-3');
         $('#btn_benefits').removeClass('shadowfilterfixed');
         //$('#btn_benefits').addClass('white--text');
+        
       }
       else {
         $('#seemore').fadeIn();
@@ -503,6 +534,7 @@ $(document).ready(function() {
         //$('#btn_benefits').removeClass('pink--text text--lighten-3');
         $('#btn_benefits').removeClass('shadowfilterfixed');
         //$('#btn_benefits').addClass('white--text');
+        
       }
     } else if (windowScroll>=toplogo-5){
       $('#mylogo').show();
@@ -533,6 +565,7 @@ $(document).ready(function() {
       //$('#btn_benefits').removeClass('pink--text text--lighten-3');
       $('#btn_benefits').removeClass('shadowfilterfixed');
       //$('#btn_benefits').addClass('white--text');
+      
     }
   });
 
@@ -674,7 +707,7 @@ ul, li, ol {
   display: block;
   height: 100%;
   -webkit-animation: hue-rotate 15s linear infinite;
-          animation: hue-rotate 15s linear infinite;
+  animation: hue-rotate 15s linear infinite;
 }
 
 
@@ -715,10 +748,10 @@ ul, li, ol {
 }
 
 @keyframes mover {
-    0% { transform: rotateY(0deg); }
-    50% { transform: rotateY(45deg); }
-    70% { transform: rotateY(340deg); }
-    100% { transform: rotateY(360deg); }
+  0% { transform: rotateY(0deg); }
+  50% { transform: rotateY(45deg); }
+  70% { transform: rotateY(340deg); }
+  100% { transform: rotateY(360deg); }
 }
 
 /* BUTTON BUY NOW CART */
@@ -742,19 +775,6 @@ ul, li, ol {
   /* don't use universal selectors at real world project. its known to be slow */
   background: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-.cust-num {
-  color: #757575;
-  display: inline-flex;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.7;
-  padding: 15px 30px;
-}
-
-.cust-num svg {
-  margin-right: 15px;
 }
 
 .cust-info {
@@ -800,14 +820,6 @@ ul, li, ol {
 
 .li_li:nth-child(1) {
   transition-delay: 0.6s;
-}
-
-.li_li:nth-child(2) {
-  transition-delay: 0.4s;
-}
-
-.li_li:nth-child(3) {
-  transition-delay: 0.2s;
 }
 
 .li_li:not(:last-child) {
@@ -943,5 +955,7 @@ ul, li, ol {
   transform: perspective(1000px) rotateX(0deg);
   transition: all 0.5s ease 0.5s;
 }
+
+
 
 </style>
