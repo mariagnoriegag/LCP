@@ -97,9 +97,9 @@
               </v-layout>
 
             </v-flex>
-            <v-flex xs12 sm4 md4 lg4 id="hidden_included">
+            <v-flex xs12 sm4 md4 lg4 >
               <v-layout column align-center justify-center class="black--text" style="padding-right:20%; padding-left:20%">
-                <p class="flow-text" style="font-size:20px"> 
+                <p id="hidden_included" class="flow-text" style="font-size:20px"> 
                   Lorem ipsum. Dolor sit amet. Consectetur adipiscing elit. Sed do eiusmod tempor. Incididunt ut labore. et dolore magna aliqua. Integer vitae justo. Eget magna fermentum. Iaculis eu non diam. 
                 </p>
               </v-layout>
@@ -369,16 +369,13 @@ $(document).ready(function() {
   //$('#hidden_included').hide();
   //$( '.app' ).removeClass('active',1);
   
-
   $(function() {
     $('.arrow').on('click', function() {
       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
     });
   });
-  
-  var cc = 0;
+  /*
   $('#bb').on('click', function() {
-
    if ($('.app').hasClass('active')) {
      $('.app').removeClass('active');
    }
@@ -388,15 +385,36 @@ $(document).ready(function() {
    }
 
  });
+ */
 
 
-  /*$( '#bb' ).click(function() {
-    $( '.app' ).toggleClass( 'active' );
-    
-  });*/
+  
+
 
   var imageHeight = parseInt($('#logoimg').css('height')),
   stopHeight = 62.84;
+
+  $( '#bb' ).click(function() {
+    $( '.app' ).toggleClass( 'active' );
+    
+  });
+/*$( '#bb' ).click(function() {
+  if (!$('.app').hasClass('active')) {
+        $('#hidden_included').fadeIn();
+      } else if (windowScroll > (windowHeight * 1.08)) {
+        $( '.app' ).removeClass( 'active' );
+      } else if ($('.app').hasClass('active')) {
+        $('#hidden_included').fadeOut();
+      } 
+      });*/
+
+$( '#bb' ).click(function() {
+  if (!$('.app').hasClass('active')) {
+        $('#hidden_included').fadeIn();
+      } else  {
+        $('#hidden_included').fadeOut();
+      } 
+      });
 
   $(window).scroll(function() {
 
@@ -435,13 +453,20 @@ $(document).ready(function() {
       //$('#btn_benefits').removeClass('pink--text text--lighten-3');
       $('#btn_benefits').removeClass('shadowfilterfixed');
       //$('#btn_benefits').addClass('white--text');
-
-      
-      if (windowScroll > (windowHeight * 1.08)) {
+      /*
+      if ($('.app').hasClass('active')) {
+        $('#hidden_included').fadeOut();
+      } else if (windowScroll > (windowHeight * 1.08)) {
         $( '.app' ).removeClass( 'active' );
       } else {
-        $( '.app' ).addClass( 'active' );
-      }
+        $('#hidden_included').fadeIn();
+      } 
+      */
+      if (windowScroll > (windowHeight * 1.08)) {
+        $( '.app' ).removeClass( 'active' );
+      } 
+       
+    
 
     } else if(windowScroll > (2*windowHeight)-50 && windowScroll < (3*windowHeight)-50) {
       $('#mylogo').show();
@@ -459,6 +484,7 @@ $(document).ready(function() {
       //$('#btn_benefits').removeClass('pink--text text--lighten-3');
       $('#btn_benefits').removeClass('shadowfilterfixed');
       //$('#btn_benefits').addClass('white--text');
+      $('#hidden_included').fadeIn();
       
 
     } else if(windowScroll > (3*windowHeight)-50 && windowScroll < (4*windowHeight)-50) {
@@ -477,6 +503,8 @@ $(document).ready(function() {
       //$('#btn_benefits').removeClass('white--text');
       //$('#btn_benefits').addClass('pink--text text--lighten-3');
       $('#btn_benefits').addClass('shadowfilterfixed');
+
+      $('#hidden_included').fadeIn();
       
 
     } else if(newHeight>=stopHeight ){
@@ -506,6 +534,7 @@ $(document).ready(function() {
         //$('#btn_benefits').removeClass('pink--text text--lighten-3');
         $('#btn_benefits').removeClass('shadowfilterfixed');
         //$('#btn_benefits').addClass('white--text');
+        $('#hidden_included').fadeIn();
         
       }
       else {
@@ -534,6 +563,7 @@ $(document).ready(function() {
         //$('#btn_benefits').removeClass('pink--text text--lighten-3');
         $('#btn_benefits').removeClass('shadowfilterfixed');
         //$('#btn_benefits').addClass('white--text');
+        $('#hidden_included').fadeIn();
         
       }
     } else if (windowScroll>=toplogo-5){
@@ -565,6 +595,7 @@ $(document).ready(function() {
       //$('#btn_benefits').removeClass('pink--text text--lighten-3');
       $('#btn_benefits').removeClass('shadowfilterfixed');
       //$('#btn_benefits').addClass('white--text');
+      $('#hidden_included').fadeIn();
       
     }
   });
