@@ -79,25 +79,22 @@
       <v-layout row wrap justify-center class="" style=" height:-webkit-fill-available; padding-top:1%;padding-bottom:1%;  background-size: auto 100%;">
 
         <v-flex xs12 sm12 md12 lg12>
-          <v-layout row align-center justify-center style="padding-top:5%; padding-bottom:0%">
-            <v-flex xs12 sm4 md4 lg4>
-              <v-layout column align-center justify-center class="black--text" style="padding-right:20%; padding-left:20%" >
+          <v-layout row align-center justify-left style="padding-top:80px; padding-bottom:0%">
+            <v-flex xs12 sm12 md4 lg4 class="hidden-sm-and-down">
+              <v-layout column align-center justify-center class="black--text " style="padding-right:20%; padding-left:20%" >
                 <p class="flow-text" style="font-size:20px"> 
                   Lorem ipsum. Dolor sit amet. Consectetur adipiscing elit. Sed do eiusmod tempor. Incididunt ut labore. et dolore magna aliqua. Integer vitae justo. Eget magna fermentum. Iaculis eu non diam. 
                 </p>
               </v-layout>
 
             </v-flex>
-            <v-flex xs12 sm4 md4 lg4>
+            <v-flex xs8 sm7 md4 lg4 offset-xs2 offset-sm0>
               <v-layout column align-center justify-center class="" style="">
                 <img class="rotateYaxis" src="../src/assets/tickets.png" style="width:80%;"></img>
                 <h4 class="flow-text" style="color: #F31160;font-size:30px;font-weight:500;">Buy your tickets! </h4> 
-                <v-icon large style="color: #5CC9F5">flight_takeoff</v-icon> 
-                <h4 class="flow-text" style="color: #5CC9F5;font-weight:400;">VISIT US</h4>
               </v-layout>
-
             </v-flex>
-            <v-flex xs12 sm4 md4 lg4 >
+            <v-flex xs12 sm5 md4 lg4 class="hidden-xs-only">
               <v-layout column align-center justify-center class="black--text" style="padding-right:20%; padding-left:20%">
                 <p id="hidden_included" class="flow-text" style="font-size:20px"> 
                   Lorem ipsum. Dolor sit amet. Consectetur adipiscing elit. Sed do eiusmod tempor. Incididunt ut labore. et dolore magna aliqua. Integer vitae justo. Eget magna fermentum. Iaculis eu non diam. 
@@ -135,8 +132,13 @@
         </v-layout>
       </v-flex>
 
-      <v-flex xs12 sm12 md12 lg12>
-        <v-layout row wrap justify-center style="padding-bottom:0px;">
+      <v-flex xs12 sm12 md12 lg12 style="bottom:2px">
+        <v-layout column align-center justify-center class="" style="">
+          <v-icon large style="color: #5CC9F5">flight_takeoff</v-icon> 
+          <h4 class="flow-text" style="color: #5CC9F5;font-weight:400;">VISIT US</h4>
+        </v-layout>
+        <v-layout row wrap justify-center align-center style="padding-bottom:0px;">
+          
           <v-flex xs12 sm12 md12 lg12 class="carousel shadowfilterfixed" id="carousel-responsive" style="height:200px;">
             <ul class="listsize" style="padding:0; ">
               <li>
@@ -410,7 +412,7 @@ $(document).ready(function() {
 
 $( '#bb' ).click(function() {
   if (!$('.app').hasClass('active')) {
-        $('#hidden_included').fadeIn();
+        $('#hidden_included').fadeIn(4000);
       } else  {
         $('#hidden_included').fadeOut();
       } 
