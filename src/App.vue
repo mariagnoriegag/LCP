@@ -54,6 +54,7 @@
         </v-toolbar-items>
       </v-flex>
     </v-toolbar>
+
     <!-- CONTAINER VIDEO -->
     <v-container fluid id="home" style="margin:0; padding:0; height:-webkit-fill-available; background-color:black;">
       <v-flex lg12>
@@ -66,13 +67,14 @@
 
       <v-flex lg12>
         <v-layout justify-center align-center style="margin:-70px">
-         <v-btn dark href="#included"  class="transparent arrow elevation-0" style="height: 1px; width: 1px;" >
+         <v-btn dark href="#included"  class="transparent arrow elevation-0 " style="height: 1px; width: 1px;" >
           <img id="seemore" src="../src/assets/seemore.png">
         </v-btn>
       </v-layout>
     </v-flex>
 
   </v-container>
+
   <!-- MAIN -->
   <main >
     <!-- INCLUDED -->
@@ -345,27 +347,92 @@
       -->
 
     </v-container>
-    <!-- HOW TO USE IT -->
-    <v-container id="useit" fluid style="margin:0; padding:0;">
-      <img src="../src/assets/limaportada.jpg" style="height:-webkit-fill-available;"></img>
 
+    <!-- HOW TO USE IT -->
+    <v-container id="useit" fluid style="margin:0; padding:0; background-color:black;" class="" >
+      <v-layout row wrap justify-center class="" style=" height:-webkit-fill-available; padding:0">
+       <img src="../src/assets/portadalcp.png" style="height:-webkit-fill-available; "></img>
+      </v-layout>
     </v-container>
+
     <!-- OTHER BENEFITS -->
-    <v-container id="benefits" fluid style="margin:0; padding:0;">
-      <img src="../src/assets/limaportada.jpg" style="height:-webkit-fill-available;"></img>
-      <v-parallax src="../src/assets/limacerros.jpg"></v-parallax>
-      <div id="cssSelector">
-        <div class="line">
-          <div class="square el"></div>
-        </div>
-      </div>
+    <v-container id="benefits" fluid style="margin:0; padding:0; background-color:black;" class="">
+      <v-layout row wrap justify-center class="" style=" height:-webkit-fill-available; padding:0">
+        <img src="../src/assets/limaportada.jpg" style="height:-webkit-fill-available;"></img>
+      </v-layout>
     </v-container>
 
   </main>
+
   <!-- FOOTER -->
-  <v-footer >
-    <span>&copy; 2017</span>
-  </v-footer>
+  <v-container fluid fixed-footer style="margin:0; padding:0;" fluid class="container-footer">
+    <v-flex sm12 xl12 xs12 md12>
+        <v-layout align-center justify-space-around class="white--text container-footer">
+            <v-flex sm1 xl1 xs1 md1 class="column-footer" style="width: 5%; background-color:#525252">
+                <v-layout align-center justify-space-around style="padding: 1%; " >
+
+                </v-layout>
+            </v-flex>
+            <v-flex sm4 xl4 xs4 md4 class="column-footer" style="width: 30%; background-color:#525252" >
+                <v-layout row align-center justify-space-around style="padding:10%" >
+                    <v-flex sm12 xl12 xs12 md12>
+                        <v-layout align-center justify-center style="padding:1%" >
+                            <v-flex sm12 xl12 xs12 md12 >
+                                <v-layout align-center flat justify-left style=" padding: 0; margin-top:4%">
+                                    <img id="mylogo" src="../src/assets/limalogowhite.png" class="shadowfilter"  style="width:90px;"></img>
+                                </v-layout>
+                            </v-flex >
+                        </v-layout>
+                        <v-layout align-center justify-center style="padding:1%; margin-top:4%" >
+                            <v-flex sm12 xl12 xs12 md12 >
+                                <v-layout align-center justify-center style=" ">
+                                    <div style="font-size:0.9rem">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                    </div>
+                                </v-layout>
+                            </v-flex >
+                        </v-layout>
+                    </v-flex>
+                </v-layout>
+            </v-flex>
+            <v-flex sm3 xl3 xs3 md3  class="column-footer" style="width: 30%; padding-bottom:30px; background-color: #414141">
+                <v-layout align-center justify-space-around style="padding:10%" >
+                    <v-flex sm12 xl12 xs12 md12>
+                        <v-layout row wrap align-center justify-center style="padding:10%" >
+                            <v-flex sm12 xl12 xs12 md12 >
+                                <a href="#"><p>LIMA CITY PASS</p></a>
+                            </v-flex >
+                            <v-flex sm12 xl12 xs12 md12 >
+                                <a href="#"><p>WHAT IS INCLUDED</p></a>
+                            </v-flex >
+                            <v-flex sm12 xl12 xs12 md12 >
+                                <a href="#"><p>HOW TO USE</p></a>
+                            </v-flex >
+                        </v-layout>
+                    </v-flex >
+                </v-layout>
+            </v-flex>
+            <v-flex sm3 xl3 xs3 m3 class="column-footer" style="width: 30%; background-color:#313131">
+                <v-layout align-center justify-space-around style=" padding: 1%; " >
+
+                </v-layout>
+            </v-flex>
+
+            <v-flex sm1 xl1 xs1 md1  class="column-footer" style="width: 5%; background-color:#313131">
+                <v-layout align-center justify-space-around style="padding: 1%; " >
+
+                </v-layout>
+            </v-flex>
+        </v-layout>
+    </v-flex>
+</v-container>
+
+  <v-footer class="pa-3 cyan darken-2 white--text" style="margin-top:0px">
+
+    <div style="font-size:0.8rem">
+        © {{ new Date().getFullYear() }} Lima City Pass, Inc. All rights reserved.
+    </div>
+</v-footer>
 </v-app>
 </template>
 
@@ -1057,7 +1124,56 @@ div.round {
     radial-gradient(circle at 100% 50%, rgba(204,0,0,0) 14px, #F06292 15px);
   background-size: 50% 100% 
 }
+.container-footer {
+    display: table;
+    width: 100%;
+}
+.column-footer {
+    display: table-cell;
+}
+a:hover{
+    color: cyan;
+}
+a:active{
+    color: teal;
+}
+a {
+    color: white;
+}
+a {
+    text-decoration: none
+}
 
 
+down vote
+Alternative solution ("alternate" property):
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.2, 1.2);
+    }
+    to {
+        -webkit-transform: scale(1, 1);
+    }
+}
+
+@keyframes zoom {
+   from {
+        transform: scale(1, 1);
+   }
+   to {
+       transform: scale(1.2, 1.2);
+   }
+}
+
+
+#seemore {
+    -webkit-animation: zoom 1s ease-in-out infinite alternate;
+    animation: zoom 1s ease-in-out infinite alternate;
+    height: 95px;
+}
 
 </style>
