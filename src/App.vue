@@ -113,16 +113,16 @@
                 </div>
                 <div class="maindiv">
                 </div>
-                <div class="footerdiv">
-                  <h2 class="center" style="font-size:18px; font-weight:600">LIMA CITY PASS</h2>
+                <div class="footerdiv round elevation-0" style="">
+                  <h2 class="white--text center" style="font-size:18px; font-weight:600">LIMA CITY PASS</h2>
                   <ul style="height: 50px; width: auto;">
-                    <li class="li_li" style="height:auto"> Number of tickets <span> $48.00 </span> </li>
+                    <li class="white--text li_li" style="height:auto"> Number of tickets 
+                      <span class="white--text"> $48.00 </span> 
+                    </li>
                   </ul>
-                  <div class="total" style="margin:0">
+                  <div class="white--text total" style="margin:0;border-top:0">
                     <p>Total <span>$231.00</span></p>
-
                   </div>
-                  
                 </div>
                 <div class="maindiv2">
                 </div>
@@ -1047,7 +1047,16 @@ ul, li, ol {
   transform: perspective(1000px) rotateX(0deg);
   transition: all 0.5s ease 1.1s;
 }
-
+div.round {
+  background: 
+  linear-gradient(0deg, transparent 0px, #ED1862 0) left,
+  linear-gradient(0deg, transparent 0px, #ED1862 0) right;  
+  background-repeat: no-repeat;
+  background-image:
+    radial-gradient(circle at 0 50%, rgba(204,0,0,0) 14px, #F06292 15px),
+    radial-gradient(circle at 100% 50%, rgba(204,0,0,0) 14px, #F06292 15px);
+  background-size: 50% 100% 
+}
 
 
 
