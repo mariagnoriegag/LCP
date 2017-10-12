@@ -351,7 +351,121 @@
     <!-- HOW TO USE IT -->
     <v-container id="useit" fluid style="margin:0; padding:0; background-color:black;" class="" >
       <v-layout row wrap justify-center class="" style=" height:-webkit-fill-available; padding:0">
-       <img src="../src/assets/portadalcp.png" style="height:-webkit-fill-available; "></img>
+       <v-flex sm12 xl12 xs12 md12 class="grey lighten-3">
+
+        <v-layout align-center justify-space-around >
+            <v-flex sm12 xl12 xs12 md12 class="transparent ">
+                <v-layout id="howtouse" align-center justify-space-around style=" padding: 1%;" >
+                    <v-card-title primary-title>
+                        <h3 class="headline mb-0">HOW TO USE IT</h3>
+                    </v-card-title>
+                </v-layout>
+
+                <v-layout align-center justify-space-around style=" padding-bottom: 2%; margin-left:4%; margin-right:4%;" >
+                    <v-flex sm3 xs3 xl3 md3 flat style="padding-right:1%; padding-left:1%;">
+                        <v-layout flat justify-center style=" padding: 0%;">
+                            <v-flex sm8 xs8 xl8 md8>
+                                <v-layout align-center flat justify-center style=" padding: 0; height: 170px">
+                                    <img src="src/assets/grid1.png" style="height: -webkit-fill-available;">
+                                </v-layout>
+                            </v-flex>
+                        </v-layout>
+                        <v-layout align-center justify-space-around class="white--text" style="margin-top:15px;">
+                            <v-flex sm12 xl12 xs12 md12 >
+                                <div style="display: grid;">
+                                    <span class="black--text" style="text-align:center;"><b>GET IT</b></span><br>
+                                    <span class="grey--text" style="text-align:center;" >
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                    </span>
+                                    <v-btn round flat class="orange--text">Learn more</v-btn>
+                                </div>
+                            </v-flex>
+                        </v-layout>
+                    </v-flex>
+
+                    <v-flex sm3 xs3 xl3 md3 flat style="padding-right:1%; padding-left:1%;">
+                        <v-layout flat justify-center style=" padding: 0%;">
+                            <v-flex sm8 xs8 xl8 md8 >
+                                <v-layout align-center flat justify-center style=" padding: 0; height: 170px">
+                                    <img src="src/assets/grid2.png" style="height: -webkit-fill-available;">
+                                </v-layout>
+                            </v-flex>
+                        </v-layout>
+                        <v-layout align-center justify-space-around class="white--text" style="margin-top:15px;">
+                            <v-flex sm12 xl12 xs12 md12 >
+                                <div style="display: grid;">
+                                    <span class="black--text" style="text-align:center;"><b>LOGIN</b></span><br>
+                                    <span class="grey--text" style="text-align:center;" >
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                    </span>
+                                    <v-btn round flat class="orange--text">Learn more</v-btn>
+                                </div>
+                            </v-flex>
+                        </v-layout>
+                    </v-flex>
+
+                    <v-flex sm3 xs3 xl3 md3 flat style="padding-right:1%; padding-left:1%;">
+                        <v-layout flat justify-center style=" padding: 0%;">
+                            <v-flex sm8 xs8 xl8 md8>
+                                <v-layout align-center flat justify-center style=" padding: 0; height: 170px">
+                                    <img src="src/assets/grid3.png" style="height: -webkit-fill-available;">
+                                </v-layout>
+                            </v-flex>
+                        </v-layout>
+                        <v-layout align-center justify-space-around class="white--text" style="margin-top:15px;">
+                            <v-flex sm12 xl12 xs12 md12 >
+                                <div style="display: grid;">
+                                    <span class="black--text" style="text-align:center;"><b>USE IT</b></span><br>
+                                    <span class="grey--text" style="text-align:center;" >
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                    </span>
+                                    <v-btn round flat class="orange--text">Learn more</v-btn>
+                                </div>
+                            </v-flex>
+                        </v-layout>
+                    </v-flex>
+
+                    <v-flex sm3 xs3 xl3 md3 flat style="padding-right:1%; padding-left:1%;">
+                        <v-layout flat justify-center style=" padding: 0%;">
+                            <v-flex sm8 xs8 xl8 md8>
+                                <v-layout align-center flat justify-center style="padding: 0; height: 170px">
+                                    <img src="src/assets/grid4.png" style="height: -webkit-fill-available;">
+                                </v-layout>
+                            </v-flex>
+                        </v-layout>
+                        <v-layout align-center justify-space-around class="white--text" style="margin-top:15px;">
+                            <v-flex sm12 xl12 xs12 md12 >
+                                <div style="display: grid;">
+                                    <span class="black--text" style="text-align:center;"><b>ENJOY IT</b></span><br>
+                                    <span class="grey--text" style="text-align:center;" >
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                    </span>
+                                    <v-btn round flat class="orange--text">Learn more</v-btn>
+                                </div>
+                            </v-flex>
+                        </v-layout>
+                    </v-flex>
+                </v-layout>
+            </v-flex>
+        </v-layout>
+
+        <v-layout align-center justify-space-around class="white--text">
+            <v-flex sm12 xl12 xs12 md12 class="cyan darken-1">
+                <v-layout align-center justify-center style=" padding: 0.5%;" >
+                    <v-flex sm4 xl4 xs4 md4 class="">
+                        <v-layout align-center justify-center style=" padding: 0;" >
+                            <h5 style="margin:0; font-size:medium;"><u><b>#ilovelima</b></u></h5>
+                        </v-layout>
+                    </v-flex>
+                    <v-flex sm8 xl8 xs8 md8 class="">
+                        <v-layout align-center justify-left style="padding: 0;" >
+                            <h5 style="margin:0; font-size:small;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h5>
+                        </v-layout>
+                    </v-flex>
+                </v-layout>
+            </v-flex>
+        </v-layout>
+      </v-flex>
       </v-layout>
     </v-container>
 
@@ -450,20 +564,6 @@ $(document).ready(function() {
       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
     });
   });
-  /*
-  $('#bb').on('click', function() {
-   if ($('.app').hasClass('active')) {
-     $('.app').removeClass('active');
-   }
-   else
-   {
-     $('.app').addClass('active');
-   }
-
- });
- */
-
-
   
 
 
@@ -474,15 +574,7 @@ $(document).ready(function() {
     $( '.app' ).toggleClass( 'active' );
     
   });
-/*$( '#bb' ).click(function() {
-  if (!$('.app').hasClass('active')) {
-        $('#hidden_included').fadeIn();
-      } else if (windowScroll > (windowHeight * 1.08)) {
-        $( '.app' ).removeClass( 'active' );
-      } else if ($('.app').hasClass('active')) {
-        $('#hidden_included').fadeOut();
-      } 
-      });*/
+
 
 $( '#bb' ).click(function() {
   if (!$('.app').hasClass('active')) {
@@ -502,15 +594,14 @@ $( '#bb' ).click(function() {
     toplogo = $("#logoimg").offset().top;
 
     toplogo = toplogo-1;
-    console.log(toplogo)
-    console.log(windowScroll)
+    
 
     if (windowScroll > windowHeight - 50 && windowScroll < (2*windowHeight)-50) {
       $('#mylogo').show();
       $('#toolbar1').removeClass('transparent');
       //$('#toolbar1').removeClass('elevation-0');
       //$('#toolbar1').addClass('pink darken-2');
-      $('#toolbar1').css("background-color", "#52c8d8");
+      $('#toolbar1').css("background-color", "#009aaa");
       //$('#toolbar1').addClass('elevation-4');
       //$('#bb').removeClass('orange');
       //$('#bb').removeClass('white--text');
