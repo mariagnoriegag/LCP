@@ -104,7 +104,7 @@
               </v-layout>
             </v-flex>
             <v-flex id="cart" xs12 sm4 md4 lg4  style="position: fixed; top: 5em; right: 10px;">
-              <div class="app active" style="margin:0">
+              <div class="app active" style="margin:0; position: fixed; right: 10px;">
                 <div>
                   <div class="cust-info" style="margin-bottom:10px; margin-top:10px">
                     <h2 style="font-size:14px; margin:0; padding:0">Hi, Traveler!</h2>
