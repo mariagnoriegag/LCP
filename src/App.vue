@@ -601,7 +601,7 @@ $( '#bb' ).click(function() {
       $('#toolbar1').removeClass('transparent');
       //$('#toolbar1').removeClass('elevation-0');
       //$('#toolbar1').addClass('pink darken-2');
-      $('#toolbar1').css("background-color", "#009aaa");
+      $('#toolbar1').css("background-color", "#00CBDB");
       //$('#toolbar1').addClass('elevation-4');
       //$('#bb').removeClass('orange');
       //$('#bb').removeClass('white--text');
