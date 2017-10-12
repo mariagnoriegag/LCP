@@ -80,7 +80,7 @@
     <!-- INCLUDED -->
     <!-- #438496 #B37D4E #CD5360 #286DA8 #2c3e50 midnight-->
     <v-container id="included" fluid style="margin:0; padding:0; " class="" >
-      <v-layout row wrap justify-center class="" style=" height:-webkit-fill-available; padding-top:1%;padding-bottom:1%;  background-size: auto 100%;">
+      <v-layout row wrap justify-center align-center class="" style=" height:-webkit-fill-available; padding-top:1%;padding-bottom:1%;  background-size: auto 100%;">
 
         <v-flex xs12 sm12 md12 lg12>
           <v-layout row align-center justify-left style="padding-top:80px; padding-bottom:0%">
@@ -344,23 +344,27 @@
           </v-layout>
           </v-flex>
         </v-layout>
+        </v-container>
       -->
 
-    </v-container>
+    
 
     <!-- HOW TO USE IT -->
     <v-container id="useit" fluid style="margin:0; padding:0; background-color:black;" class="" >
-      <v-layout row wrap justify-center class="" style=" height:-webkit-fill-available; padding:0">
+      <v-layout row wrap justify-center class="" style=" height:-webkit-fill-available; padding-top:0">
        <v-flex sm12 xl12 xs12 md12 class="grey lighten-3">
-
-        <v-layout align-center justify-space-around >
-            <v-flex sm12 xl12 xs12 md12 class="transparent ">
-                <v-layout id="howtouse" align-center justify-space-around style=" padding: 1%;" >
+        <v-layout align-center justify-space-around style="margin-top:78px">
+           <v-flex sm12 xl12 xs12 md12 class="transparent ">
+                <v-layout align-center justify-space-around style=" padding: 1%;" >
                     <v-card-title primary-title>
                         <h3 class="headline mb-0">HOW TO USE IT</h3>
                     </v-card-title>
                 </v-layout>
-
+              </v-flex>
+            </v-layout>
+        <v-layout align-center justify-space-around >
+            <v-flex sm12 xl12 xs12 md12 class="transparent ">
+                
                 <v-layout align-center justify-space-around style=" padding-bottom: 2%; margin-left:4%; margin-right:4%;" >
                     <v-flex sm3 xs3 xl3 md3 flat style="padding-right:1%; padding-left:1%;">
                         <v-layout flat justify-center style=" padding: 0%;">
@@ -449,8 +453,13 @@
             </v-flex>
         </v-layout>
 
-        <v-layout align-center justify-space-around class="white--text">
-            <v-flex sm12 xl12 xs12 md12 class="cyan darken-1">
+        
+      </v-flex>
+      </v-layout>
+    </v-container >
+    <!-- I LOVE LIMA -->
+    <v-layout align-center justify-space-around class="white--text">
+            <v-flex sm12 xl12 xs12 md12 class="cyan darken-1" style="margin-top: -50px;">
                 <v-layout align-center justify-center style=" padding: 0.5%;" >
                     <v-flex sm4 xl4 xs4 md4 class="">
                         <v-layout align-center justify-center style=" padding: 0;" >
@@ -465,9 +474,6 @@
                 </v-layout>
             </v-flex>
         </v-layout>
-      </v-flex>
-      </v-layout>
-    </v-container>
 
     <!-- OTHER BENEFITS -->
     <v-container id="benefits" fluid style="margin:0; padding:0; background-color:black;" class="">
