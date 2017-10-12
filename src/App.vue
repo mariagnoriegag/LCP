@@ -122,7 +122,12 @@
                     <p>Total <span>$231.00</span></p>
 
                   </div>
-                  <v-flex xs12 sm12 md12 lg12 style="margin:0; padding:0; border-top:0" class="total">
+                  
+                </div>
+                <div class="maindiv2">
+                </div>
+                <div class="footerdiv2">
+                  <v-flex xs12 sm12 md12 lg12 style="margin:0; padding:0; border-top:0" class="buy_now">
                     <v-layout justify-center align-center style="padding-bottom:0px; display: grid;">
                       <v-btn id ="buynow" class="pink lighten-2 white--text elevation-0 shadowfilter" style="" round>BUY NOW</v-btn>
                     </v-layout>
@@ -886,12 +891,27 @@ ul, li, ol {
   left: -50px;
   opacity: 0;
   transform: translateY(10px);
-  transition: left 0.8s ease, opacity 0.5s ease, transform 0s ease 1.5s;
+  transition: left 0.5s ease, opacity 0.5s ease, transform 0s ease 1.8s;
 }
+
+.buy_now {
+  border-top: 2px solid #FFC107;
+  padding-top: 15px;
+  margin: 0 0 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  left: -50px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: left 0.1s ease, opacity 0.1s ease, transform 0s ease 1.8s;
+}
+
 .total p {
   opacity: 0;
   transform: translateY(10px);
-  transition: all 0s ease 1.5s;
+  transition: all 0s ease 1.2s;
 }
 .total span {
   float: right;
@@ -905,6 +925,16 @@ ul, li, ol {
   transform: perspective(1000px) rotateX(-90deg);
   transform-origin: top;
   transition: all 0.5s ease 1.7s;
+}
+
+.maindiv2 {
+  border-bottom: 2px dotted #F06292;
+  border-radius: 0 0 4px 4px;
+  padding: 0 30px;
+  position: relative;
+  transform: perspective(1000px) rotateX(-90deg);
+  transform-origin: top;
+  transition: all 0.5s ease 1.1s;
 }
 
 .maindiv h3 {
@@ -933,6 +963,13 @@ ul, li, ol {
   transform-origin: top;
   transition: all 0.5s cubic-bezier(.42, -1.04, .79, 1) 1.1s;
 }
+.footerdiv2 {
+  border-radius: 4px;
+  padding: 15px 30px;
+  transform: perspective(1000px) rotateX(-90deg);
+  transform-origin: top;
+  transition: all 0.5s cubic-bezier(.42, -1.04, .79, 1) 0.5s;
+}
 
 .footerdiv svg {
   fill: #757575;
@@ -960,6 +997,11 @@ ul, li, ol {
   transition: all 0.5s ease 0.5s;
 }
 
+.active .maindiv2 {
+  transform: perspective(1000px) rotateX(0deg);
+  transition: all 0.5s ease 0.9s;
+}
+
 .active .maindiv h3 {
   opacity: 1;
   transform: translateY(0);
@@ -976,22 +1018,36 @@ ul, li, ol {
   transition-delay: 1s;
 }
 
-
 .active .total {
   opacity: 1;
   transform: translateY(0);
   left: 0;
-  transition: transform 0.8s ease 1s, opacity 0.8s ease 1s;
+  transition: transform 0.5s ease 0.7s, opacity 0.5s ease 0.7s;
 }
+
+.active .buy_now {
+  opacity: 1;
+  transform: translateY(0);
+  left: 0;
+  transition: transform 1s ease 1.4s, opacity 1s ease 1.4s;
+  transition-delay: 1.3s;
+}
+
 .active .total p {
   opacity: 1;
   transform: translateY(0);
-  transition: all 0.5s ease 1.5s;
+  transition: all 0.3s ease 0.9s;
 }
 .active .footerdiv {
   transform: perspective(1000px) rotateX(0deg);
   transition: all 0.5s ease 0.5s;
 }
+
+.active .footerdiv2 {
+  transform: perspective(1000px) rotateX(0deg);
+  transition: all 0.5s ease 1.1s;
+}
+
 
 
 
