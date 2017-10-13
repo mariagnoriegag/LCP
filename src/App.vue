@@ -351,11 +351,10 @@
 
       <!-- HOW TO USE IT -->
       <v-container id="useit" fluid style="margin:0; padding:0; background-color:black;" class="" >
-        <v-layout row wrap justify-center align-content-center class="grey lighten-3" style=" height:-webkit-fill-available; padding-top:">
-         
-         <v-flex sm12 xl12 xs12 md12 fill-height  class="" style="margin-bottom: 5%; margin-top:-30px">
+        <v-layout row wrap justify-center align-content-center class="grey lighten-3 hidden-xs-only" style=" height:-webkit-fill-available; padding-top:">
+          <v-flex sm12 md12 xl12 fill-height class="hidden-sm-and-down" style="margin-bottom: 5%; margin-top:-30px">
           <v-layout align-center justify-space-around style="">
-            <v-flex sm12 xl12 xs12 md12 class="transparent ">
+            <v-flex sm12 md12 xl12 class="transparent ">
               <v-layout align-center justify-space-around style=" padding: 1%;" >
                 <v-card-title primary-title>
                   <h3 class="headline mb-0">HOW TO USE IT</h3>
@@ -365,18 +364,26 @@
           </v-layout>
         </v-flex>
 
-        <v-flex sm12 xl12 xs12 md12 class="" style="">
-              <v-layout align-center justify-center style=" padding-bottom: 2%; margin-left:4%; margin-right:4%;" >
-                <v-flex sm3 xs3 xl3 md3 flat style="padding-right:1%; padding-left:1%;">
+        <v-flex sm12 md12 xl12 class="hidden-md-and-up" style="height:55px">
+        </v-flex>
+
+        <v-flex sm12 md12 xl12 fill-height class="" style="">
+              
+              <v-layout row wrap align-center justify-center style=" padding-bottom: 2%; margin-left:4%; margin-right:4%;" >
+                
+                <v-flex sm6 md3 xl3 flat style="padding-right:1%; padding-left:1%; padding-bottom:2%;">
                   <v-layout flat justify-center style=" padding: 0%;">
-                    <v-flex sm8 xs8 xl8 md8>
-                      <v-layout align-center flat justify-center style=" padding: 0; height: 170px">
+                    <v-flex sm8 md8 xl8>
+                      <v-layout align-center flat justify-center class="hidden-md-and-up" style=" padding: 0; ">
+                        <img src="src/assets/applcp.png" style="height: 130px; width: auto;">
+                      </v-layout>
+                      <v-layout align-center flat justify-center class="hidden-sm-and-down" style="padding: 0; height: 170px">
                         <img src="src/assets/applcp.png" style="height: -webkit-fill-available;">
                       </v-layout>
                     </v-flex>
                   </v-layout>
                   <v-layout align-center justify-space-around class="white--text" style="margin-top:15px;">
-                    <v-flex sm12 xl12 xs12 md12 >
+                    <v-flex sm10 xl10 md10>
                       <div style="display: grid;">
                         <span class="black--text" style="text-align:center;"><b>GET IT</b></span><br>
                         <span class="grey--text" style="text-align:center;" >
@@ -388,16 +395,19 @@
                   </v-layout>
                 </v-flex>
 
-                <v-flex sm3 xs3 xl3 md3 flat style="padding-right:1%; padding-left:1%;">
+                <v-flex sm6 md3 xl3 flat style="padding-right:1%; padding-left:1%; padding-bottom:2%;">
                   <v-layout flat justify-center style=" padding: 0%;">
-                    <v-flex sm8 xs8 xl8 md8 >
-                      <v-layout align-center flat justify-center style=" padding: 0; height: 170px">
+                    <v-flex sm8 md8 xl8>
+                      <v-layout align-center flat justify-center class="hidden-md-and-up" style=" padding: 0; ">
+                        <img src="src/assets/qr.png" style="height: 130px; width: auto;">
+                      </v-layout>
+                      <v-layout align-center flat justify-center class="hidden-sm-and-down" style="padding: 0; height: 170px">
                         <img src="src/assets/qr.png" style="height: -webkit-fill-available;">
                       </v-layout>
                     </v-flex>
                   </v-layout>
                   <v-layout align-center justify-space-around class="white--text" style="margin-top:15px;">
-                    <v-flex sm12 xl12 xs12 md12 >
+                    <v-flex sm10 xl10 md10>
                       <div style="display: grid;">
                         <span class="black--text" style="text-align:center;"><b>LOGIN</b></span><br>
                         <span class="grey--text" style="text-align:center;" >
@@ -409,16 +419,19 @@
                   </v-layout>
                 </v-flex>
 
-                <v-flex sm3 xs3 xl3 md3 flat style="padding-right:1%; padding-left:1%;">
+                <v-flex sm6 md3 xl3 flat style="padding-right:1%; padding-left:1%; padding-bottom:2%;">
                   <v-layout flat justify-center style=" padding: 0%;">
-                    <v-flex sm8 xs8 xl8 md8>
-                      <v-layout align-center flat justify-center style=" padding: 0; height: 170px">
+                    <v-flex sm8 md8 xl8>
+                      <v-layout align-center flat justify-center class="hidden-md-and-up" style="padding: 0; ">
+                        <img src="src/assets/personlcp.png" style="height: 130px; width: auto;">
+                      </v-layout>
+                      <v-layout align-center flat justify-center class="hidden-sm-and-down" style="padding: 0; height: 170px">
                         <img src="src/assets/personlcp.png" style="height: -webkit-fill-available;">
                       </v-layout>
                     </v-flex>
                   </v-layout>
                   <v-layout align-center justify-space-around class="white--text" style="margin-top:15px;">
-                    <v-flex sm12 xl12 xs12 md12 >
+                    <v-flex sm10 xl10 md10>
                       <div style="display: grid;">
                         <span class="black--text" style="text-align:center;"><b>USE IT</b></span><br>
                         <span class="grey--text" style="text-align:center;" >
@@ -430,16 +443,123 @@
                   </v-layout>
                 </v-flex>
 
-                <v-flex sm3 xs3 xl3 md3 flat style="padding-right:1%; padding-left:1%;">
+                <v-flex sm6 md3 xl3 flat style="padding-right:1%; padding-left:1%; padding-bottom:2%;">
                   <v-layout flat justify-center style=" padding: 0%;">
-                    <v-flex sm8 xs8 xl8 md8>
+                    <v-flex sm8 md8 xl8>
+                      <v-layout align-center flat justify-center class="hidden-md-and-up" style="padding: 0;">
+                        <img src="src/assets/heart.png" style="height: 130px; width: auto;">
+                      </v-layout>
+                      <v-layout align-center flat justify-center class="hidden-sm-and-down" style="padding: 0; height: 170px">
+                        <img src="src/assets/heart.png" style="height: -webkit-fill-available;">
+                      </v-layout>
+                    </v-flex>
+                  </v-layout>
+                  <v-layout align-center justify-space-around class="white--text" style="margin-top:15px;">
+                    <v-flex sm10 xl10 md10>
+                      <div style="display: grid;">
+                        <span class="black--text" style="text-align:center;"><b>ENJOY IT</b></span><br>
+                        <span class="grey--text" style="text-align:center;" >
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        </span>
+                        <v-btn round flat class="orange--text">Learn more</v-btn>
+                      </div>
+                    </v-flex>
+                  </v-layout>
+            </v-flex>
+          </v-layout>
+        </v-flex>
+      </v-layout>
+
+        <v-layout row wrap justify-center class="grey lighten-3 hidden-sm-and-up" style="padding-top:60px">
+         <v-flex sm12 xl12 xs12 md12 fill-height class="" style="margin-bottom: 5%; ">
+          <v-layout align-center justify-space-around style="">
+            <v-flex sm12 xl12 xs12 md12 class="transparent ">
+              <v-layout align-center justify-space-around style=" padding: 1%;" >
+                <v-card-title primary-title>
+                  <h3 class="headline mb-0">HOW TO USE IT</h3>
+                </v-card-title>
+              </v-layout>
+            </v-flex>
+          </v-layout>
+        </v-flex>
+
+        <v-flex sm12 xl12 xs12 md12 fill-height class="" style="">
+              
+              <v-layout row wrap align-center justify-center style=" padding-bottom: 2%; margin-left:4%; margin-right:4%;" >
+                
+                <v-flex xs12 flat style="padding-right:1%; padding-left:1%; padding-bottom:25px">
+                  <v-layout flat justify-center style=" padding: 0%;">
+                    <v-flex xs8>
+                      <v-layout align-center flat justify-center style=" padding: 0; height: 170px">
+                        <img src="src/assets/applcp.png" style="height: -webkit-fill-available;">
+                      </v-layout>
+                    </v-flex>
+                  </v-layout>
+                  <v-layout align-center justify-space-around class="white--text" style="margin-top:15px;">
+                    <v-flex xs6>
+                      <div style="display: grid;">
+                        <span class="black--text" style="text-align:center;"><b>GET IT</b></span><br>
+                        <span class="grey--text" style="text-align:center;" >
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        </span>
+                        <v-btn round flat class="orange--text">Learn more</v-btn>
+                      </div>
+                    </v-flex>
+                  </v-layout>
+                </v-flex>
+
+                <v-flex xs12 flat style="padding-right:1%; padding-left:1%; padding-bottom:25px">
+                  <v-layout flat justify-center style=" padding: 0%;">
+                    <v-flex xs8>
+                      <v-layout align-center flat justify-center style=" padding: 0; height: 170px">
+                        <img src="src/assets/qr.png" style="height: -webkit-fill-available;">
+                      </v-layout>
+                    </v-flex>
+                  </v-layout>
+                  <v-layout align-center justify-space-around class="white--text" style="margin-top:15px;">
+                    <v-flex xs6>
+                      <div style="display: grid;">
+                        <span class="black--text" style="text-align:center;"><b>LOGIN</b></span><br>
+                        <span class="grey--text" style="text-align:center;" >
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        </span>
+                        <v-btn round flat class="orange--text">Learn more</v-btn>
+                      </div>
+                    </v-flex>
+                  </v-layout>
+                </v-flex>
+
+                <v-flex xs12 flat style="padding-right:1%; padding-left:1%; padding-bottom:25px">
+                  <v-layout flat justify-center style=" padding: 0%;">
+                    <v-flex xs8>
+                      <v-layout align-center flat justify-center style=" padding: 0; height: 170px">
+                        <img src="src/assets/personlcp.png" style="height: -webkit-fill-available;">
+                      </v-layout>
+                    </v-flex>
+                  </v-layout>
+                  <v-layout align-center justify-space-around class="white--text" style="margin-top:15px;">
+                    <v-flex xs6>
+                      <div style="display: grid;">
+                        <span class="black--text" style="text-align:center;"><b>USE IT</b></span><br>
+                        <span class="grey--text" style="text-align:center;" >
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        </span>
+                        <v-btn round flat class="orange--text">Learn more</v-btn>
+                      </div>
+                    </v-flex>
+                  </v-layout>
+                </v-flex>
+
+                <v-flex xs12  flat style="padding-right:1%; padding-left:1%; padding-bottom:50px">
+                  <v-layout flat justify-center style=" padding: 0%;">
+                    <v-flex xs8>
                       <v-layout align-center flat justify-center style="padding: 0; height: 170px">
                         <img src="src/assets/heart.png" style="height: -webkit-fill-available;">
                       </v-layout>
                     </v-flex>
                   </v-layout>
                   <v-layout align-center justify-space-around class="white--text" style="margin-top:15px;">
-                    <v-flex sm12 xl12 xs12 md12 >
+                    <v-flex xs6>
                       <div style="display: grid;">
                         <span class="black--text" style="text-align:center;"><b>ENJOY IT</b></span><br>
                         <span class="grey--text" style="text-align:center;" >
@@ -466,7 +586,8 @@
           </v-flex>
           <v-flex sm8 xl8 xs8 md8 class="">
             <v-layout align-center justify-left style="padding: 0;" >
-              <h5 style="margin:0; font-size:small;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h5>
+              <h5 class="hidden-xs-only" style="margin:0; font-size:small;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h5>
+              <h5 class="hidden-sm-and-up" style="margin:0; font-size:small;">Lorem ipsum dolor sit amet.</h5>
             </v-layout>
           </v-flex>
         </v-layout>
