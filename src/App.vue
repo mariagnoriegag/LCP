@@ -559,16 +559,20 @@
 
     <!-- OTHER BENEFITS -->
     <v-container id="benefits" fluid style="margin:0; padding:0; background-color:black;" class="">
-      <v-layout row wrap justify-center class="white" style=" height:-webkit-fill-available; padding:0">
+      <v-layout row wrap justify-center align-content-center class="white" style=" height:-webkit-fill-available; padding-top:50px">
         
-        <v-layout align-center justify-space-around >
-            <v-flex sm12 xl12 xs12 md12 class="transparent ">
-                <v-layout align-center justify-space-around style=" padding: 1%;" >
+        <v-flex sm12 xl12 xs12 md12 class="transparent ">
+          <v-layout align-center justify-space-around style=" padding: 1%;" >
                     <v-card-title primary-title>
                         <h3 class="headline mb-0">OTHER EXCLUSIVE DISCOUNTS WITH LIMA CITY PASS</h3>
                     </v-card-title>
                 </v-layout>
-
+        </v-flex>
+        <v-flex xs12 sm12 md12 xl12 class="transparent" style="height:20px">
+        </v-flex>
+        
+            <v-flex sm12 xl12 xs12 md12 class="transparent ">
+                
                 <v-layout align-center justify-space-around style=" padding-bottom: 4%; margin-left:4%; margin-right:4%;" >
                     <v-flex sm3 xs3 xl3 md3 flat>
                         <v-layout flat justify-center style=" padding: 0%;">
@@ -663,7 +667,7 @@
                     </v-flex>
                 </v-layout>
             </v-flex>
-        </v-layout>
+       
 
 
       </v-layout>
@@ -803,6 +807,8 @@ $(document).ready(function() {
     } else if(windowScroll > (2*windowHeight)-50 && windowScroll < (3*windowHeight)-50) {
       $('#mylogo').show();
       //$('#toolbar1').css("background-color", "#6ed1a2");
+      $('#toolbar1').removeClass('transparent');
+      $('#toolbar1').css("background-color", "#00CBDB");
       $('#seemore').fadeOut();
       $('#btn_included').removeClass('shadowfilterfixed');
       $('#btn_useit').addClass('shadowfilterfixed');
@@ -811,6 +817,8 @@ $(document).ready(function() {
     } else if(windowScroll > (3*windowHeight)-50 && windowScroll < (4*windowHeight)-50) {
       $('#mylogo').show();
       //$('#toolbar1').css("background-color", "#ffab82");
+      $('#toolbar1').removeClass('transparent');
+      $('#toolbar1').css("background-color", "#00CBDB");
       $('#seemore').fadeOut();
       $('#btn_included').removeClass('shadowfilterfixed');
       $('#btn_useit').removeClass('shadowfilterfixed');
@@ -831,13 +839,11 @@ $(document).ready(function() {
         $('#btn_useit').removeClass('shadowfilterfixed');
         $('#btn_benefits').removeClass('shadowfilterfixed');
         $('#hidden_included').fadeIn();
-        
       }
       else {
         $('#seemore').fadeIn();
         $("#logoimg").show();
         $('#logoimg').css("height", newHeight);
-        $('#toolbar1').css("background-color", "transparent");
         $('#toolbar1').addClass('transparent');
         $('#toolbar1').addClass('elevation-0');
         $('#bb').addClass('orange');
@@ -857,7 +863,6 @@ $(document).ready(function() {
       $('#logoimg').css("height", stopHeight);
       $('#toolbar1').css("background-color", "transparent");
       $('#toolbar1').removeClass('elevation-4');
-      $('#toolbar1').addClass('transparent');
       $('#toolbar1').addClass('elevation-0');
       $('#bb').addClass('orange');
       $('#bb').addClass('white--text');
