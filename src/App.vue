@@ -312,43 +312,6 @@
     </v-layout>
   </v-container>
 
-
-
-
-      <!-- INCLUDED 
-      <v-container id="included" fluid style="margin:0; padding:0;">
-        <v-layout row wrap justify-center align-center class="black darken-4" style="height:-webkit-fill-available; padding:5%">
-          <v-flex xs12 lg12>
-            <v-layout justify-center align-center>
-              <h3 class="white--text" style="margin:0">WHAT'S INCLUDED</h3>
-            </v-layout>
-          </v-flex>
-           <v-flex xs6 lg6>
-            <v-layout justify-center align-center>
-            <img src="../src/assets/tickets.png" style="width:200px;"></img>
-          </v-layout>
-          </v-flex>
-          <v-flex xs6 lg6>
-            <v-layout justify-center align-center>
-            <img src="../src/assets/giflcp.gif" style="width:90%;"></img>
-          </v-layout>
-          </v-flex>
-        <v-flex xs6 lg6>
-            <v-layout justify-center align-center>
-            <img src="../src/assets/tickets.png" style="width:200px;"></img>
-          </v-layout>
-          </v-flex>
-          <v-flex xs6 lg6>
-            <v-layout justify-center align-center>
-            <img src="../src/assets/giflcp.gif" style="width:90%;"></img>
-          </v-layout>
-          </v-flex>
-        </v-layout>
-        </v-container>
-      -->
-
-
-
       <!-- HOW TO USE IT -->
       <v-container id="useit" fluid style="margin:0; padding:0; background-color:black;" class="" >
         <v-layout row wrap justify-center align-content-center class="grey lighten-3 hidden-xs-only" style=" height:-webkit-fill-available; padding-top:">
@@ -596,8 +559,113 @@
 
     <!-- OTHER BENEFITS -->
     <v-container id="benefits" fluid style="margin:0; padding:0; background-color:black;" class="">
-      <v-layout row wrap justify-center class="" style=" height:-webkit-fill-available; padding:0">
-        <img src="../src/assets/limaportada.jpg" style="height:-webkit-fill-available;"></img>
+      <v-layout row wrap justify-center class="white" style=" height:-webkit-fill-available; padding:0">
+        
+        <v-layout align-center justify-space-around >
+            <v-flex sm12 xl12 xs12 md12 class="transparent ">
+                <v-layout align-center justify-space-around style=" padding: 1%;" >
+                    <v-card-title primary-title>
+                        <h3 class="headline mb-0">OTHER EXCLUSIVE DISCOUNTS WITH LIMA CITY PASS</h3>
+                    </v-card-title>
+                </v-layout>
+
+                <v-layout align-center justify-space-around style=" padding-bottom: 4%; margin-left:4%; margin-right:4%;" >
+                    <v-flex sm3 xs3 xl3 md3 flat>
+                        <v-layout flat justify-center style=" padding: 0%;">
+                            <v-flex sm12 xs12 xl12 md12>
+                                <v-layout align-center flat justify-center style=" padding: 0;">
+                                    <img src="src/assets/exp1.png" style="width: -webkit-fill-available;">
+                                </v-layout>
+                            </v-flex>
+                        </v-layout>
+                        <v-layout align-center justify-space-around class="white--text" style="margin-top:-45px;">
+                            <v-flex sm10 xl10 xs10 md10 style="padding: 2%; padding-left: 10%; padding-right: 10%; background-color:#313131">
+                                <div  style="padding-top:2.5%; padding-bottom:2.5%">
+                                    <div style="padding-top: 2%; font-size: 1.3rem">
+                                        <b>EXPERIENCE</b> <br>
+                                    </div>
+                                    <hr style="color: #fff; padding:0; margin:0; height:3px" />
+                                    <div style="font-size:0.75rem; margin-top: 2px" class="white--text">
+                                        <a href="#"> Learn more</a>
+                                    </div>
+                                </div>
+                            </v-flex>
+                        </v-layout>
+                    </v-flex>
+
+                    <v-flex sm3 xs3 xl3 md3 flat>
+                        <v-layout flat justify-center style=" padding: 0%;">
+                            <v-flex sm12 xs12 xl12 md12>
+                                <v-layout align-center flat justify-center style=" padding: 0;">
+                                    <img src="src/assets/exp2.png" style="width: -webkit-fill-available;">
+                                </v-layout>
+                            </v-flex>
+                        </v-layout>
+                        <v-layout align-center justify-space-around class="white--text" style="margin-top:-45px;">
+                            <v-flex sm10 xl10 xs10 md10  style="padding: 2%; padding-left: 10%; padding-right: 10%; background-color:#313131">
+                                <div  style="padding-top:2.5%; padding-bottom:2.5%">
+                                    <div style="padding-top: 2%; font-size:1.3rem">
+                                        <b>EXPERIENCE</b> <br>
+                                    </div>
+                                    <hr style="color: #fff; padding:0; margin:0; height:3px" />
+                                    <div style="font-size:0.75rem; margin-top: 2px" class="white--text">
+                                        <a href="#"> Learn more</a>
+                                    </div>
+                                </div>
+                            </v-flex>
+                        </v-layout>
+                    </v-flex>
+
+                    <v-flex sm3 xs3 xl3 md3 flat>
+                        <v-layout flat justify-center style=" padding: 0%;">
+                            <v-flex sm12 xs12 xl12 md12>
+                                <v-layout align-center flat justify-center style=" padding: 0;">
+                                    <img src="src/assets/exp3.png" style="width: -webkit-fill-available;">
+                                </v-layout>
+                            </v-flex>
+                        </v-layout>
+                        <v-layout align-center justify-space-around class="white--text" style="margin-top:-45px;">
+                            <v-flex sm10 xl10 xs10 md10  style="padding: 2%; padding-left: 10%; padding-right: 10%; background-color:#313131">
+                                <div  style="padding-top:2.5%; padding-bottom:2.5%">
+                                    <div style="padding-top: 2%; font-size:1.3rem">
+                                        <b>EXPERIENCE</b> <br>
+                                    </div>
+                                    <hr style="color: #fff; padding:0; margin:0; height:3px" />
+                                    <div style="font-size:0.75rem; margin-top: 2px" class="white--text">
+                                        <a href="#"> Learn more</a>
+                                    </div>
+                                </div>
+                            </v-flex>
+                        </v-layout>
+                    </v-flex>
+
+                    <v-flex sm3 xs3 xl3 md3 flat>
+                        <v-layout flat justify-center style=" padding: 0%;">
+                            <v-flex sm12 xs12 xl12 md12>
+                                <v-layout align-center flat justify-center style=" padding: 0;">
+                                    <img src="src/assets/exp4.png" style="width: -webkit-fill-available;">
+                                </v-layout>
+                            </v-flex>
+                        </v-layout>
+                        <v-layout align-center justify-space-around class="white--text" style="margin-top:-45px;">
+                            <v-flex sm10 xl10 xs10 md10  style="padding: 2%; padding-left: 10%; padding-right: 10%; background-color:#313131">
+                                <div  style="padding-top:2.5%; padding-bottom:2.5%">
+                                    <div style="padding-top: 2%; font-size:1.3rem">
+                                        <b>EXPERIENCE</b> <br>
+                                    </div>
+                                    <hr style="color: #fff; padding:0; margin:0; height:3px" />
+                                    <div style="font-size:0.75rem;margin-top: 2px" class="white--text; ">
+                                        <a href="#"> Learn more</a>
+                                    </div>
+                                </div>
+                            </v-flex>
+                        </v-layout>
+                    </v-flex>
+                </v-layout>
+            </v-flex>
+        </v-layout>
+
+
       </v-layout>
     </v-container>
 
@@ -639,14 +707,17 @@
             <v-flex sm12 xl12 xs12 md12>
               <v-layout row wrap align-center justify-center style="padding:10%" >
                 <v-flex sm12 xl12 xs12 md12 >
-                  <a href="#"><p>LIMA CITY PASS</p></a>
+                  <a href="#home" class="arrow"><p>LIMA CITY PASS</p></a>
                 </v-flex >
                 <v-flex sm12 xl12 xs12 md12 >
-                  <a href="#"><p>WHAT IS INCLUDED</p></a>
+                  <a href="#included" class="arrow"><p>WHAT IS INCLUDED</p></a>
                 </v-flex >
                 <v-flex sm12 xl12 xs12 md12 >
-                  <a href="#"><p>HOW TO USE</p></a>
+                  <a href="#useit" class="arrow"><p>HOW TO USE</p></a>
                 </v-flex >
+                <!-- <v-flex sm12 xl12 xs12 md12 >
+                  <img src="../src/assets/visaplus.png" style="">
+                </v-flex > -->
               </v-layout>
             </v-flex >
           </v-layout>
@@ -681,23 +752,18 @@
 
 $(document).ready(function() {
   $('#mylogo').hide();
-  //$('#hidden_included').hide();
-  //$( '.app' ).removeClass('active',1);
   
   $(function() {
     $('.arrow').on('click', function() {
       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
     });
   });
-  
-
 
   var imageHeight = parseInt($('#logoimg').css('height')),
   stopHeight = 62.84;
 
   $( '#bb' ).click(function() {
-    $( '.app' ).toggleClass( 'active' );
-    
+    $( '.app' ).toggleClass( 'active' );  
   });
 
 
@@ -724,110 +790,46 @@ $(document).ready(function() {
     if (windowScroll > windowHeight - 50 && windowScroll < (2*windowHeight)-50) {
       $('#mylogo').show();
       $('#toolbar1').removeClass('transparent');
-      //$('#toolbar1').removeClass('elevation-0');
-      //$('#toolbar1').addClass('pink darken-2');
       $('#toolbar1').css("background-color", "#00CBDB");
-      //$('#toolbar1').addClass('elevation-4');
-      //$('#bb').removeClass('orange');
-      //$('#bb').removeClass('white--text');
-      //$('#bb').addClass('white');
-      //$('#bb').addClass('pink--text');
       $('#seemore').fadeOut();
-
-      //$('#btn_included').removeClass('white--text');
-      //$('#btn_included').addClass('orange--text text--lighten-3');
       $('#btn_included').addClass('shadowfilterfixed');
-
-      //$('#btn_useit').removeClass('blue--text text--lighten-3');
       $('#btn_useit').removeClass('shadowfilterfixed');
-      //$('#btn_useit').addClass('white--text');
-
-      //$('#btn_benefits').removeClass('pink--text text--lighten-3');
       $('#btn_benefits').removeClass('shadowfilterfixed');
-      //$('#btn_benefits').addClass('white--text');
-      /*
-      if ($('.app').hasClass('active')) {
-        $('#hidden_included').fadeOut();
-      } else if (windowScroll > (windowHeight * 1.08)) {
-        $( '.app' ).removeClass( 'active' );
-      } else {
-        $('#hidden_included').fadeIn();
-      } 
-      */
       if (windowScroll > (windowHeight * 1.08)) {
         $( '.app' ).removeClass( 'active' );
       } if ($('.app').hasClass('active')) {
         $('#hidden_included').fadeOut();
       }
-
-
-
     } else if(windowScroll > (2*windowHeight)-50 && windowScroll < (3*windowHeight)-50) {
       $('#mylogo').show();
-      $('#toolbar1').css("background-color", "#6ed1a2");
+      //$('#toolbar1').css("background-color", "#6ed1a2");
       $('#seemore').fadeOut();
-
-      //$('#btn_included').removeClass('orange--text text--lighten-3');
       $('#btn_included').removeClass('shadowfilterfixed');
-      //$('#btn_included').addClass('white--text');
-
-      //$('#btn_useit').removeClass('white--text');
-      //$('#btn_useit').addClass('blue--text text--lighten-3');
       $('#btn_useit').addClass('shadowfilterfixed');
-
-      //$('#btn_benefits').removeClass('pink--text text--lighten-3');
       $('#btn_benefits').removeClass('shadowfilterfixed');
-      //$('#btn_benefits').addClass('white--text');
       $('#hidden_included').fadeIn();
-      
-
     } else if(windowScroll > (3*windowHeight)-50 && windowScroll < (4*windowHeight)-50) {
       $('#mylogo').show();
-      $('#toolbar1').css("background-color", "#ffab82");
+      //$('#toolbar1').css("background-color", "#ffab82");
       $('#seemore').fadeOut();
-
-      //$('#btn_included').removeClass('orange--text text--lighten-3');
       $('#btn_included').removeClass('shadowfilterfixed');
-      //$('#btn_included').addClass('white--text');
-
-      //$('#btn_useit').removeClass('blue--text text--lighten-3');
       $('#btn_useit').removeClass('shadowfilterfixed');
-      //$('#btn_useit').addClass('white--text');
-
-      //$('#btn_benefits').removeClass('white--text');
-      //$('#btn_benefits').addClass('pink--text text--lighten-3');
       $('#btn_benefits').addClass('shadowfilterfixed');
-
       $('#hidden_included').fadeIn();
-      
-
     } else if(newHeight>=stopHeight ){
       if (windowScroll >= 10){
         $('#seemore').fadeOut();
         $("#logoimg").show();
         $('#logoimg').css("height", newHeight);
-        //$('#toolbar1').removeClass('pink darken-2');
         $('#toolbar1').css("background-color", "transparent");
-        //$('#toolbar1').removeClass('elevation-4');
         $('#toolbar1').addClass('transparent');
         $('#toolbar1').addClass('elevation-0');
-        //$('#bb').removeClass('white');
-        //$('#bb').removeClass('pink--text');
         $('#bb').addClass('orange');
         $('#bb').addClass('white--text');
         $('#mylogo').hide(40);
-        
-        //$('#btn_included').removeClass('orange--text text--lighten-3');
         $('#btn_included').removeClass('shadowfilterfixed');
-        //$('#btn_included').addClass('white--text');
-
-        //$('#btn_useit').removeClass('blue--text text--lighten-3');
         $('#btn_useit').removeClass('shadowfilterfixed');
-        //$('#btn_useit').addClass('white--text');
-
-        //$('#btn_benefits').removeClass('pink--text text--lighten-3');
         $('#btn_benefits').removeClass('shadowfilterfixed');
-        //$('#btn_benefits').addClass('white--text');
         $('#hidden_included').fadeIn();
         
       }
@@ -835,30 +837,16 @@ $(document).ready(function() {
         $('#seemore').fadeIn();
         $("#logoimg").show();
         $('#logoimg').css("height", newHeight);
-        //$('#toolbar1').removeClass('pink darken-2');
         $('#toolbar1').css("background-color", "transparent");
-        //$('#toolbar1').removeClass('elevation-4');
         $('#toolbar1').addClass('transparent');
         $('#toolbar1').addClass('elevation-0');
-        //$('#bb').removeClass('white');
-        //$('#bb').removeClass('pink--text');
         $('#bb').addClass('orange');
         $('#bb').addClass('white--text');
         $('#mylogo').hide();
-        
-        //$('#btn_included').removeClass('orange--text text--lighten-3');
         $('#btn_included').removeClass('shadowfilterfixed');
-        //$('#btn_included').addClass('white--text');
-
-        //$('#btn_useit').removeClass('blue--text text--lighten-3');
         $('#btn_useit').removeClass('shadowfilterfixed');
-        //$('#btn_useit').addClass('white--text');
-
-        //$('#btn_benefits').removeClass('pink--text text--lighten-3');
         $('#btn_benefits').removeClass('shadowfilterfixed');
-        //$('#btn_benefits').addClass('white--text');
         $('#hidden_included').fadeIn();
-        
       }
     } else if (windowScroll>=toplogo-5){
       $('#mylogo').show();
@@ -867,49 +855,21 @@ $(document).ready(function() {
     } else {
       $("#logoimg").show();
       $('#logoimg').css("height", stopHeight);
-      //$('#toolbar1').removeClass('pink darken-2');
       $('#toolbar1').css("background-color", "transparent");
       $('#toolbar1').removeClass('elevation-4');
       $('#toolbar1').addClass('transparent');
       $('#toolbar1').addClass('elevation-0');
-      //$('#bb').removeClass('white');
-      //$('#bb').removeClass('pink--text');
       $('#bb').addClass('orange');
       $('#bb').addClass('white--text');
       $('#mylogo').hide();
-      
-      //$('#btn_included').removeClass('orange--text text--lighten-3');
       $('#btn_included').removeClass('shadowfilterfixed');
-      //$('#btn_included').addClass('white--text');
-
-      //$('#btn_useit').removeClass('blue--text text--lighten-3');
       $('#btn_useit').removeClass('shadowfilterfixed');
-      //$('#btn_useit').addClass('white--text');
-
-      //$('#btn_benefits').removeClass('pink--text text--lighten-3');
       $('#btn_benefits').removeClass('shadowfilterfixed');
-      //$('#btn_benefits').addClass('white--text');
       $('#hidden_included').fadeIn();
-      
     }
   });
 
 });
-
-// CART BUY BUTTON
-
-//var app = document.querySelector('.app');
-//var button = document.querySelector('button');
-
-//button.addEventListener('click', function() {
-/*$(function() {
-  $('#bb').on('click', function() {
-    app.classList.toggle('active');
-    app.classList.contains('active') ? this.innerHTML = "CLOSE" : this.innerHTML = "OPEN";
-  });
-});*/
-
-
 
 export default {
   data () {
@@ -931,7 +891,6 @@ export default {
 </script>
 
 <style type="text/css">
-
 
 
 ul, li, ol {
