@@ -43,10 +43,8 @@
             <v-btn href="#" class="white--text" style="height: 38px; width: 38px;" icon><v-icon>person</v-icon></v-btn>
             <!-- <v-btn id ="bb" class="arcoirisbutton orange lighten-3 white--text elevation-0 shadowfilter" style="left:10%" round>BUY NOW</v-btn>
             -->
-            <v-btn id ="bb" class="arcoirisbutton orange lighten-3 white--text elevation-0 shadowfilter" style="left:10%; height: 45px; width: 45px; padding:0" round>
-              <v-layout row wrap justify-center >
-                <v-icon>local_activity</v-icon>
-              </v-layout>
+            <v-btn id ="bb" class="arcoirisbutton orange lighten-3 black--text elevation-0 shadowfilter" style="left:10%; height: 45px; width: 45px; padding:0" round>
+              BUY NOW
             </v-btn>
             
 
@@ -110,8 +108,8 @@
               <div class="app active" style="margin:0; position: fixed; right: 10px;">
                 <div>
                   <div class="cust-info" style="margin-bottom:10px; margin-top:10px">
-                    <h2 style="font-size:14px; margin:0; padding:0">Hi, Traveler!</h2>
-                    <p style="padding-top:5px;padding-bottom:5px;margin:0">Buy tickets for a great adventure in Lima, Peru</p>
+                    <h2 style="font-size:14px; margin:0; padding:0">Get your tickets now and enjoy Lima!</h2>
+                   
                   </div>
                 </div>
                 <div class="maindiv">
@@ -144,7 +142,7 @@
                 <div class="footerdiv2">
                   <v-flex xs12 sm12 md12 lg12 style="margin:0; padding:0; border-top:0" class="buy_now">
                     <v-layout justify-center align-center style="padding-bottom:0px; display: grid;">
-                      <v-btn id ="buynow" class="pink lighten-2 white--text elevation-0 shadowfilter" style="" round>BUY NOW</v-btn>
+                      <v-btn id ="buynow" class="pink lighten-2 white--text elevation-0 shadowfilter" style="" round>PROCEED TO CHECKOUT</v-btn>
                     </v-layout>
                   </v-flex>
                 </div>
@@ -785,7 +783,12 @@
     <v-layout row wrap>
       <v-flex d-flex xs12 sm6 md4>
         <v-card class="purple" dark>
-          <v-card-title primary class="title">Lorem</v-card-title>
+          <v-card-title primary class="title">
+            <v-layout align-center flat justify-left style=" padding: 0; margin-top:4%">
+                  <img id="mylogo" src="../src/assets/LIMA CITY PASS.png" class="shadowfilter"  style="width:90px;"></img>
+                </v-layout>
+          </v-card-title>
+
           <v-card-text
             v-text="lorem">
           </v-card-text>
