@@ -43,8 +43,8 @@
             <v-btn href="#" class="white--text" style="height: 38px; width: 38px;" icon><v-icon>person</v-icon></v-btn>
             <!-- <v-btn id ="bb" class="arcoirisbutton orange lighten-3 white--text elevation-0 shadowfilter" style="left:10%" round>BUY NOW</v-btn>
             -->
-            <v-btn id ="bb" class="arcoirisbutton orange lighten-3 black--text elevation-0 shadowfilter" style="left:10%; height: 45px; width: 45px; padding:0" round>
-              BUY NOW
+            <v-btn id ="bb" class="arcoirisbutton orange lighten-3 white--text elevation-0 shadowfilter" style="left:10%; height: 45px; width: 45px; padding:0; font-size:16px" round>
+              <b>BUY NOW</b>
             </v-btn>
             
 
@@ -575,7 +575,7 @@
     <v-flex sm12 xl12 xs12 md12 class="transparent ">
       <v-layout align-center justify-space-around style=" padding: 1%;" >
         <v-card-title primary-title>
-          <h3 class="headline mb-0">OTHER EXCLUSIVE DISCOUNTS WITH LIMA CITY PASS</h3>
+          <h3 class="headline mb-0">ENJOY EXCLUSIVE DISCOUNTS </h3>
         </v-card-title>
       </v-layout>
     </v-flex>
@@ -584,8 +584,8 @@
 
     <v-flex sm12 xl12 xs12 md12 class="transparent ">
 
-      <v-layout align-center justify-space-around style=" padding-bottom: 4%; margin-left:4%; margin-right:4%;" >
-        <v-flex sm3 xs3 xl3 md3 flat>
+      <v-layout align-center justify-space-around style=" padding-bottom: 4%; margin-left:17%; margin-right:17%;" >
+        <v-flex sm4 xs4 xl4 md4 flat>
           <v-layout flat justify-center style=" padding: 0%;">
             <v-flex sm12 xs12 xl12 md12>
               <v-layout align-center flat justify-center style=" padding: 0;">
@@ -597,7 +597,7 @@
             <v-flex sm10 xl10 xs10 md10 style="padding: 2%; padding-left: 10%; padding-right: 10%; background-color:#313131">
               <div  style="padding-top:2.5%; padding-bottom:2.5%">
                 <div style="padding-top: 2%; font-size: 1.3rem">
-                  <b>EXPERIENCE</b> <br>
+                  <b>ADVENTURE</b> <br>
                 </div>
                 <hr style="color: #fff; padding:0; margin:0; height:3px" />
                 <div style="font-size:0.75rem; margin-top: 2px" class="white--text">
@@ -608,7 +608,7 @@
           </v-layout>
         </v-flex>
 
-        <v-flex sm3 xs3 xl3 md3 flat>
+        <v-flex sm4 xs4 xl4 md4 flat>
           <v-layout flat justify-center style=" padding: 0%;">
             <v-flex sm12 xs12 xl12 md12>
               <v-layout align-center flat justify-center style=" padding: 0;">
@@ -620,7 +620,7 @@
             <v-flex sm10 xl10 xs10 md10  style="padding: 2%; padding-left: 10%; padding-right: 10%; background-color:#313131">
               <div  style="padding-top:2.5%; padding-bottom:2.5%">
                 <div style="padding-top: 2%; font-size:1.3rem">
-                  <b>EXPERIENCE</b> <br>
+                  <b>GASTRONOMY</b> <br>
                 </div>
                 <hr style="color: #fff; padding:0; margin:0; height:3px" />
                 <div style="font-size:0.75rem; margin-top: 2px" class="white--text">
@@ -631,7 +631,7 @@
           </v-layout>
         </v-flex>
 
-        <v-flex sm3 xs3 xl3 md3 flat>
+        <v-flex sm4 xs4 xl4 md4 flat>
           <v-layout flat justify-center style=" padding: 0%;">
             <v-flex sm12 xs12 xl12 md12>
               <v-layout align-center flat justify-center style=" padding: 0;">
@@ -643,7 +643,7 @@
             <v-flex sm10 xl10 xs10 md10  style="padding: 2%; padding-left: 10%; padding-right: 10%; background-color:#313131">
               <div  style="padding-top:2.5%; padding-bottom:2.5%">
                 <div style="padding-top: 2%; font-size:1.3rem">
-                  <b>EXPERIENCE</b> <br>
+                  <b>NIGHTLIFE</b> <br>
                 </div>
                 <hr style="color: #fff; padding:0; margin:0; height:3px" />
                 <div style="font-size:0.75rem; margin-top: 2px" class="white--text">
@@ -654,28 +654,7 @@
           </v-layout>
         </v-flex>
 
-        <v-flex sm3 xs3 xl3 md3 flat>
-          <v-layout flat justify-center style=" padding: 0%;">
-            <v-flex sm12 xs12 xl12 md12>
-              <v-layout align-center flat justify-center style=" padding: 0;">
-                <img src="src/assets/exp4.png" style="width: -webkit-fill-available;">
-              </v-layout>
-            </v-flex>
-          </v-layout>
-          <v-layout align-center justify-space-around class="white--text" style="margin-top:-45px;">
-            <v-flex sm10 xl10 xs10 md10  style="padding: 2%; padding-left: 10%; padding-right: 10%; background-color:#313131">
-              <div  style="padding-top:2.5%; padding-bottom:2.5%">
-                <div style="padding-top: 2%; font-size:1.3rem">
-                  <b>EXPERIENCE</b> <br>
-                </div>
-                <hr style="color: #fff; padding:0; margin:0; height:3px" />
-                <div style="font-size:0.75rem;margin-top: 2px" class="white--text; ">
-                  <a href="#"> Learn more</a>
-                </div>
-              </div>
-            </v-flex>
-          </v-layout>
-        </v-flex>
+        
       </v-layout>
     </v-flex>
 
